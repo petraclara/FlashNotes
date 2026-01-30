@@ -38,9 +38,15 @@ RULES (must follow exactly):
 - Output MUST be valid JSON
 - Output MUST contain a key called "questions"
 - "questions" MUST be an array
-- Each item MUST be an object with keys "question" and "answer"
+- Each item MUST be an object with keys "question", "answer", "details"
 - "question" MUST be EXACTLY 8 words
 - "answer" MUST be a concise correct answer to the question
+- "details" MUST be an object containing:
+    - "examples": an array of short real-world examples (if any)
+    - "difficulty": one of Beginner, Intermediate, Advanced
+    - "categories": an array of relevant categories
+    - "source": a short source or reference
+    - "lastReviewed": a string for last reviewed date
 - Use ONLY general knowledge
 - No punctuation inside the question text
 - No explanations
@@ -50,8 +56,20 @@ RULES (must follow exactly):
 EXAMPLE OUTPUT:
 {
   "questions": [
-    { "question": "What causes tides on Earth oceans primarily",
-      "answer": "The gravitational pull of the Moon and Sun" }
+    {
+      "question": "What causes tides on Earth oceans primarily",
+      "answer": "The gravitational pull of the Moon and Sun",
+      "details": {
+        "examples": [
+          "High tide occurs when the Moon is overhead",
+          "Tides affect fishing and coastal activities"
+        ],
+        "difficulty": "Intermediate",
+        "categories": ["Geography", "Astronomy", "Physics"],
+        "source": "National Oceanic and Atmospheric Administration",
+        "lastReviewed": "2026-01-30"
+      }
+    }
   ]
 }
 `
