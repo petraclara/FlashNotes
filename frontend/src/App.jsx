@@ -3,7 +3,9 @@ import Flashcard from './components/Flashcard';
 import Sidebar from './components/Sidebar';
 import DetailsModal from './components/DetailsModal';
 import Loader from './components/Loader';
-import { mockFlashcards, historyStack } from './utils/mockData';
+import questionData from '../scripts/questions.json'
+import {historyStack} from './utils/mockData'
+import FlashcardsList from './components/FlashcardsList';
 
 function App() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -15,12 +17,14 @@ function App() {
   const [topics, setTopics] = useState(["AI Concepts", "Machine Learning", "Neural Networks", "Reinforcement Learning"]);
   const [newTopic, setNewTopic] = useState("");
 
-  const currentCard = mockFlashcards[currentCardIndex];
+ const [cards, setCards] = useState(questionData.questions);
+
+const currentCard = cards[currentCardIndex];
 
   const handleNextCard = () => {
     setIsLoading(true);
     setTimeout(() => {
-      setCurrentCardIndex((prev) => (prev + 1) % mockFlashcards.length);
+      setCurrentCardIndex((prev) => (prev + 1) % cards.length);
       setIsLoading(false);
     }, 300);
   };
@@ -28,7 +32,7 @@ function App() {
   const handlePrevCard = () => {
     setIsLoading(true);
     setTimeout(() => {
-      setCurrentCardIndex((prev) => (prev - 1 + mockFlashcards.length) % mockFlashcards.length);
+      setCurrentCardIndex((prev) => (prev - 1 + cards.length) % cards.length);
       setIsLoading(false);
     }, 300);
   };
@@ -49,12 +53,41 @@ function App() {
     setHistory([newHistoryItem, ...history]);
   };
 
-  const handleAddTopic = () => {
-    if (newTopic.trim() && !topics.includes(newTopic.trim())) {
-      setTopics([...topics, newTopic.trim()]);
-      setNewTopic("");
-    }
-  };
+  const handleAddTopic = async () => {
+  if (!newTopic.trim()) return;
+
+  setIsLoading(true);
+
+  try {
+    const res = await fetch('http://localhost:8080/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: `Generate flashcard questions about ${newTopic}`
+      })
+    });
+
+    const data = await res.json();
+
+    const parsed = JSON.parse(data.output);
+
+   const newCards = parsed.questions.map((q, idx) => ({
+  id: cards.length + idx,
+  question: q.question,
+  answer: q.answer || 'No answer provided',
+  details: { difficulty: 'Intermediate' }
+}));
+
+    setCards(prev => [...prev, ...newCards]);
+    setTopics(prev => [...prev, newTopic.trim()]);
+    setNewTopic('');
+
+  } catch (err) {
+    console.error('AI generation failed', err);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   const handleRemoveTopic = (topicToRemove) => {
     setTopics(topics.filter(topic => topic !== topicToRemove));
@@ -150,13 +183,13 @@ function App() {
               {/* Progress Indicator */}
               <div className="max-w-2xl mx-auto mb-8">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-purple-300">Card {currentCardIndex + 1} of {mockFlashcards.length}</span>
-                  <span className="text-purple-300">{Math.round(((currentCardIndex + 1) / mockFlashcards.length) * 100)}% Complete</span>
+                  <span className="text-purple-300">Card {currentCardIndex + 1} of {cards.length}</span>
+                  <span className="text-purple-300">{Math.round(((currentCardIndex + 1) / cards.length) * 100)}% Complete</span>
                 </div>
                 <div className="h-2 bg-purple-800/50 rounded-full overflow-hidden">
                   <div 
                     className="h-full bg-gradient-to-r from-purple-500 to-purple-600 rounded-full transition-all duration-500"
-                    style={{ width: `${((currentCardIndex + 1) / mockFlashcards.length) * 100}%` }}
+                    style={{ width: `${((currentCardIndex + 1) / cards.length) * 100}%` }}
                   />
                 </div>
               </div>
@@ -187,7 +220,7 @@ function App() {
               {/* Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto mt-8 md:mt-12">
                 <div className="text-center p-4 md:p-6 bg-gradient-to-br from-purple-800/30 to-purple-900/20 rounded-2xl border border-purple-700/30">
-                  <div className="text-2xl md:text-3xl font-bold text-white">{mockFlashcards.length}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-white">{cards.length}</div>
                   <div className="text-sm text-purple-300 mt-1 md:mt-2">Total Cards</div>
                 </div>
                 <div className="text-center p-4 md:p-6 bg-gradient-to-br from-purple-800/30 to-purple-900/20 rounded-2xl border border-purple-700/30">
@@ -214,6 +247,7 @@ function App() {
         isOpen={showDetailsModal}
         onClose={() => setShowDetailsModal(false)}
       />
+
 
       {/* Mobile floating button to open sidebar */}
       {!showSidebar && (

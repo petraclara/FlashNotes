@@ -1,0 +1,86 @@
+import fs from 'fs';
+
+// 1️⃣ CONFIG
+const GO_AI_ENDPOINT = 'http://localhost:8080/chat';
+const QUESTIONS_FILE = './questions.json';
+
+// 2️⃣ FETCH AI OUTPUT FROM GO
+async function fetchAiOutput() {
+  const res = await fetch(GO_AI_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      prompt: 'Generate general knowledge flashcard questions'
+    })
+  });
+
+  if (!res.ok) {
+    throw new Error(`Go AI error: ${res.status}`);
+  }
+
+  const data = await res.json();
+  return data.output; // ← raw AI text
+}
+
+// 3️⃣ PARSE AI TEXT → JSON QUESTIONS
+function parseToJson(text) {
+  const questions = [];
+  const blocks = text.trim().split(/\n\s*\n/);
+
+  blocks.forEach(block => {
+    const lines = block.split('\n');
+    const questionObj = {
+      question: '',
+      difficulty: '',
+      link: '',
+      answer: '' // user fills this later
+    };
+
+    lines.forEach(line => {
+      const [key, ...rest] = line.split(':');
+      if (!key || rest.length === 0) return;
+
+      const cleanKey = key.trim().toLowerCase();
+      const value = rest.join(':').trim();
+
+      if (cleanKey in questionObj && cleanKey !== 'answer') {
+        questionObj[cleanKey] = value;
+      }
+    });
+
+    if (questionObj.question && questionObj.difficulty) {
+      questions.push(questionObj);
+    }
+  });
+
+  return questions;
+}
+
+// 4️⃣ MAIN PIPELINE
+async function run() {
+  // Load existing file
+  let existingData = { questions: [] };
+  if (fs.existsSync(QUESTIONS_FILE)) {
+    existingData = JSON.parse(fs.readFileSync(QUESTIONS_FILE, 'utf-8'));
+  }
+
+  // Fetch AI output
+  const aiOutput = await fetchAiOutput();
+
+  // Parse & append
+  const newQuestions = parseToJson(aiOutput);
+  existingData.questions.push(...newQuestions);
+
+  // Save
+  fs.writeFileSync(
+    QUESTIONS_FILE,
+    JSON.stringify(existingData, null, 2)
+  );
+
+  console.log(`✅ Added ${newQuestions.length} new AI questions`);
+}
+
+// 5️⃣ EXECUTE
+run().catch(err => {
+  console.error('❌ AI ingest failed:', err.message);
+});
