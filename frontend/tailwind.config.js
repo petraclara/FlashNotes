@@ -18,30 +18,11 @@ export default {
           700: '#7e22ce',
           800: '#6b21a8',
           900: '#581c87',
-        },
-        accent: {
-          lavender: '#e0d6ff',
-          lilac: '#d4bfff',
-          mauve: '#c9a8ff',
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      animation: {
-        'card-flip': 'flip 0.6s ease-out',
-        'float': 'float 3s ease-in-out infinite',
-      },
-      keyframes: {
-        flip: {
-          '0%': { transform: 'rotateY(0deg)' },
-          '100%': { transform: 'rotateY(180deg)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
-        }
-      }
     },
   },
   plugins: [],
