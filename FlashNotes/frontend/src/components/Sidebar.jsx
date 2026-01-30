@@ -1,6 +1,15 @@
 import React from 'react';
 
-const Sidebar = ({ history, currentCard }) => {
+const Sidebar = ({ 
+  history, 
+  currentCard, 
+  topics,
+  newTopic,
+  setNewTopic,
+  onAddTopic,
+  onRemoveTopic,
+  onClose 
+}) => {
   const getIcon = (action) => {
     switch (action) {
       case 'Reviewed': return (
@@ -54,19 +63,89 @@ const Sidebar = ({ history, currentCard }) => {
   };
 
   return (
-    <div className="w-80 h-screen bg-gradient-to-b from-purple-900/30 to-purple-800/20 backdrop-blur-lg border-r border-purple-700/30 overflow-y-auto">
-      <div className="p-6">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="p-2 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 3v18h18" />
-              <path d="m19 9-5 5-4-4-3 3" />
-            </svg>
+    <div className="w-full h-full bg-gradient-to-b from-purple-900/95 to-purple-800/95 backdrop-blur-xl border-r border-purple-700/30 overflow-y-auto">
+      <div className="p-4 md:p-6">
+        {/* Header with close button for mobile */}
+        <div className="flex items-center justify-between mb-6 md:mb-8">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
+            </div>
+            <h2 className="text-xl font-bold text-white">Study Dashboard</h2>
           </div>
-          <h2 className="text-xl font-bold text-white">Study History</h2>
-          <span className="ml-auto px-3 py-1 bg-purple-500/30 rounded-full text-sm text-purple-200">
-            {history.length} items
-          </span>
+          <button
+            onClick={onClose}
+            className="md:hidden p-2 hover:bg-purple-500/30 rounded-full transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Topics Section */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+            </svg>
+            Study Topics
+          </h3>
+          
+          {/* Add Topic Input */}
+          <div className="flex gap-2 mb-4">
+            <input
+              type="text"
+              value={newTopic}
+              onChange={(e) => setNewTopic(e.target.value)}
+              placeholder="Add a topic..."
+              className="flex-1 px-4 py-2 bg-white/10 backdrop-blur-sm border border-purple-300/20 rounded-lg text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+              onKeyPress={(e) => e.key === 'Enter' && onAddTopic()}
+            />
+            <button
+              onClick={onAddTopic}
+              className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Topics List */}
+          <div className="space-y-2">
+            {topics.map((topic, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg border border-purple-600/30 hover:border-purple-500/50 transition-colors group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-1.5 bg-gradient-to-br from-purple-500/30 to-purple-600/30 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                      <path d="M2 17l10 5 10-5" />
+                      <path d="M2 12l10 5 10-5" />
+                    </svg>
+                  </div>
+                  <span className="text-white font-medium">{topic}</span>
+                </div>
+                <button
+                  onClick={() => onRemoveTopic(topic)}
+                  className="p-1 opacity-0 group-hover:opacity-100 hover:bg-purple-600/30 rounded transition-all"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Current Card */}
@@ -92,7 +171,12 @@ const Sidebar = ({ history, currentCard }) => {
 
         {/* History Stack */}
         <div className="space-y-4">
-          <h3 className="text-sm font-semibold text-purple-300 mb-3">Recent Activity</h3>
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-semibold text-purple-300">Recent Activity</h3>
+            <span className="px-3 py-1 bg-purple-500/30 rounded-full text-sm text-purple-200">
+              {history.length}
+            </span>
+          </div>
           {history.map((item) => (
             <div
               key={item.id}
@@ -122,6 +206,25 @@ const Sidebar = ({ history, currentCard }) => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Stats Summary */}
+        <div className="mt-8 pt-6 border-t border-purple-700/30">
+          <h3 className="text-sm font-semibold text-purple-300 mb-3">Today's Summary</h3>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg">
+              <div className="text-lg font-bold text-white">
+                {history.filter(h => h.correct === true).length}
+              </div>
+              <div className="text-xs text-purple-300">Correct</div>
+            </div>
+            <div className="p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg">
+              <div className="text-lg font-bold text-white">
+                {history.filter(h => h.correct === false).length}
+              </div>
+              <div className="text-xs text-purple-300">Incorrect</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
