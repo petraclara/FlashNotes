@@ -1,10 +1,8 @@
 import fs from 'fs';
 
-// 1️⃣ CONFIG
 const GO_AI_ENDPOINT = 'http://localhost:8080/chat';
 const QUESTIONS_FILE = './questions.json';
 
-// 2️⃣ FETCH AI OUTPUT FROM GO
 async function fetchAiOutput() {
   const res = await fetch(GO_AI_ENDPOINT, {
     method: 'POST',
@@ -22,7 +20,6 @@ async function fetchAiOutput() {
   return data.output; // ← raw AI text
 }
 
-// 3️⃣ PARSE AI TEXT → JSON QUESTIONS
 function parseToJson(text) {
   const questions = [];
   const blocks = text.trim().split(/\n\s*\n/);
@@ -56,22 +53,17 @@ function parseToJson(text) {
   return questions;
 }
 
-// 4️⃣ MAIN PIPELINE
 async function run() {
-  // Load existing file
   let existingData = { questions: [] };
   if (fs.existsSync(QUESTIONS_FILE)) {
     existingData = JSON.parse(fs.readFileSync(QUESTIONS_FILE, 'utf-8'));
   }
 
-  // Fetch AI output
   const aiOutput = await fetchAiOutput();
 
-  // Parse & append
   const newQuestions = parseToJson(aiOutput);
   existingData.questions.push(...newQuestions);
 
-  // Save
   fs.writeFileSync(
     QUESTIONS_FILE,
     JSON.stringify(existingData, null, 2)
@@ -80,7 +72,6 @@ async function run() {
   console.log(`✅ Added ${newQuestions.length} new AI questions`);
 }
 
-// 5️⃣ EXECUTE
 run().catch(err => {
   console.error('❌ AI ingest failed:', err.message);
 });
