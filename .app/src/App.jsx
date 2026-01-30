@@ -71,12 +71,19 @@ const currentCard = cards[currentCardIndex];
 
     const parsed = JSON.parse(data.output);
 
-   const newCards = parsed.questions.map((q, idx) => ({
+  const newCards = parsed.questions.map((q, idx) => ({
   id: cards.length + idx,
   question: q.question,
   answer: q.answer || 'No answer provided',
-  details: { difficulty: 'Intermediate' }
+  details: {
+    examples: q.details?.examples || [],
+    difficulty: q.details?.difficulty || 'Intermediate',
+    categories: q.details?.categories || [],
+    source: q.details?.source || 'Unknown',
+    lastReviewed: q.details?.lastReviewed || new Date().toLocaleDateString(),
+  }
 }));
+
 
     setCards(prev => [...prev, ...newCards]);
     setTopics(prev => [...prev, newTopic.trim()]);

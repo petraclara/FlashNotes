@@ -51,12 +51,12 @@ const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
               {card.details?.difficulty || 'Intermediate'}
             </span>
             <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onShowDetails(card);
-              }}
-              className="p-1 md:p-2 hover:bg-purple-500/30 rounded-full transition-colors"
-            >
+  onClick={(e) => {
+    e.stopPropagation();
+    onShowDetails(card); // this already sets selectedCard and opens modal
+  }}
+  className="p-1 md:p-2 hover:bg-purple-500/30 rounded-full transition-colors"
+>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-purple-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="1" />
                 <circle cx="19" cy="12" r="1" />
