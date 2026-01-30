@@ -1,6 +1,9 @@
 import React from 'react';
+import { clarifyQuestion } from "../api/flashNotesApi";
+
 
 const DetailsModal = ({ card, isOpen, onClose }) => {
+  const [clarification, setClarification] = React.useState("");
   if (!isOpen) return null;
 
   return (
@@ -35,6 +38,13 @@ const DetailsModal = ({ card, isOpen, onClose }) => {
         </div>
 
         {/* Content */}
+        {clarification && (
+  <div className="p-4 bg-purple-800/40 rounded-xl">
+    <h3 className="text-sm text-purple-300 mb-2">Clarification</h3>
+    <p className="text-white">{clarification}</p>
+  </div>
+)}
+
         <div className="p-6 space-y-6 max-h-[60vh] overflow-y-auto">
           {/* Question & Answer */}
           <div className="space-y-4">
@@ -142,6 +152,16 @@ const DetailsModal = ({ card, isOpen, onClose }) => {
             >
               Close
             </button>
+            <button
+  onClick={async () => {
+    const res = await clarifyQuestion("AI Concepts", card.question);
+    setClarification(res.clarification);
+  }}
+  className="px-6 py-2 bg-purple-700 rounded-xl"
+>
+  Clarify
+</button>
+
             <button className="px-6 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all">
               Mark as Mastered
             </button>

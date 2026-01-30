@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
+  if (!card) return null;
   const [isFlipped, setIsFlipped] = useState(false);
   const [userAnswer, setUserAnswer] = useState('');
   const [showValidation, setShowValidation] = useState(false);
@@ -29,7 +30,7 @@ const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
         <div className={`h-full flex flex-col justify-between ${isFlipped ? 'hidden' : 'block'}`}>
           <div className="flex justify-between items-start">
             <span className="px-2 py-1 md:px-3 md:py-1 bg-purple-500/30 rounded-full text-xs md:text-sm text-purple-100">
-              {card.details?.difficulty || 'Intermediate'}
+              {card.details?.difficulty || "Standard"}
             </span>
             <button
               onClick={(e) => {

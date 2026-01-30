@@ -1,4 +1,23 @@
-
 {
-  "sessions": []
+  "sessions": [
+    {
+      "topic": "Photosynthesis",
+      "level": "Grade 5",
+      "cards": [
+        {
+          "question": "What is the main energy source for plants to grow?",
+          "answer": "Sunlight"
+        },
+        {
+          "question": "What do plants release from their leaves as a waste product?",
+          "answer": "Oxygen"
+        },
+        {
+          "question": "What is the term for the process by which plants make their own food?",
+          "answer": "Photosynthesis"
+        }
+      ],
+      "timestamp": "2026-01-30T22:57:42+03:00"
+    }
+  ]
 }

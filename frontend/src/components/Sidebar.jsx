@@ -195,7 +195,8 @@ const Sidebar = ({
                     </span>
                   </div>
                   <p className="text-sm text-purple-200 truncate mt-1">
-                    Card #{item.cardId} • {item.action.toLowerCase()} 
+                    Card #{item.cardId} • {(item.action || "").toLowerCase()
+} 
                     {item.correct !== null && (
                       <span className={`ml-2 ${item.correct ? 'text-green-400' : 'text-red-400'}`}>
                         {item.correct ? 'Correct' : 'Incorrect'}
