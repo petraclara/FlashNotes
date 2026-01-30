@@ -18,6 +18,82 @@
         }
       ],
       "timestamp": "2026-01-30T22:57:42+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the fundamental concept in AI where an agent learns from experience and improves its performance on a task?",
+          "answer": "Reinforcement Learning"
+        },
+        {
+          "question": "What type of neural network is characterized by its activations being discrete values between 0 and 1, making it suitable for discrete output problems?",
+          "answer": "Multilayer Perceptron (a type of Neural Network)"
+        },
+        {
+          "question": "In Deep Learning, what is the process of training a model on a dataset to make predictions and then using a new, unseen dataset to evaluate its performance?",
+          "answer": "Cross-Validation"
+        }
+      ],
+      "timestamp": "2026-01-31T02:42:00+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the primary goal of deep reinforcement learning?",
+          "answer": "Optimizing a reward function to make optimal decisions"
+        },
+        {
+          "question": "What is the term for a machine learning model that can learn from raw, unstructured data?",
+          "answer": "Tabular Model"
+        },
+        {
+          "question": "What is the difference between a neural network and a perceptron?",
+          "answer": "A neural network has multiple layers, whereas a perceptron has only one layer"
+        }
+      ],
+      "timestamp": "2026-01-31T02:42:00+03:00"
+    },
+    {
+      "topic": "sci",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the process by which stars like our Sun generate energy?",
+          "answer": "Nuclear Fusion"
+        },
+        {
+          "question": "What is the scientific term for the 'building blocks of life'?",
+          "answer": "Cells"
+        },
+        {
+          "question": "What is the term for the movement of tectonic plates that results in the creation of mountain ranges?",
+          "answer": "Plate Uplift"
+        }
+      ],
+      "timestamp": "2026-01-31T02:42:36+03:00"
+    },
+    {
+      "topic": "natural science",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the process by which plants convert light energy from the sun into chemical energy?",
+          "answer": "Photossynthesis"
+        },
+        {
+          "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+          "answer": "Igneous Rock"
+        },
+        {
+          "question": "What is the scientific term for the movement of molecules from an area of high concentration to an area of low concentration through a permeable membrane?",
+          "answer": "Osmosis"
+        }
+      ],
+      "timestamp": "2026-01-31T02:46:06+03:00"
     }
   ]
 }
