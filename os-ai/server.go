@@ -33,6 +33,11 @@ client := openai.NewClient(
     option.WithBaseURL(url),
     option.WithAPIKey(apikey),
     )
+
+    port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080"
+    }
     
 spaceSystemPrompt := `
 RULES (must follow exactly):
@@ -123,8 +128,7 @@ if r.Method == http.MethodOptions {
         })
     })
 
-    log.Println("Server running on :8080")
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
 
