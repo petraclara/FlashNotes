@@ -8,6 +8,7 @@ import {historyStack} from './utils/mockData'
 import FlashcardsList from './components/FlashcardsList';
 
 function App() {
+  const [activeTopic, setActiveTopic] = useState(null);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
   const [showDetailsModal, setShowDetailsModal] = useState(false);
@@ -57,6 +58,7 @@ const currentCard = cards[currentCardIndex];
   if (!newTopic.trim()) return;
 
   setIsLoading(true);
+  setActiveTopic(newTopic)
 
   try {
     const res = await fetch('http://localhost:8080/chat', {
@@ -85,7 +87,9 @@ const currentCard = cards[currentCardIndex];
 }));
 
 
-    setCards(prev => [...prev, ...newCards]);
+    setCards(newCards);          // RESET deck
+    setActiveTopic(newTopic);
+    setCurrentCardIndex(0);      // RESET position
     setTopics(prev => [...prev, newTopic.trim()]);
     setNewTopic('');
 
@@ -123,16 +127,16 @@ const currentCard = cards[currentCardIndex];
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-200 to-purple-100 bg-clip-text text-transparent">
-                    AI Learning Flashcards
+                    PurpleHeyz
                   </h1>
-                  <p className="text-sm text-purple-300">Powered by AI Agent • Interactive Learning Platform</p>
+                  <p className="text-sm text-purple-300">Powered by openrouter • Interactive Learning Platform</p>
                 </div>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-4">
               <div className="text-right">
                 <p className="text-sm text-purple-300">Currently studying</p>
-                <p className="font-semibold">AI Concepts & Machine Learning</p>
+                <p className="font-semibold">{topics[topics.length - 1]}</p>
               </div>
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
             </div>
@@ -203,6 +207,7 @@ const currentCard = cards[currentCardIndex];
 
               {/* Flashcard */}
               <Flashcard 
+                key={`${activeTopic}-${currentCard}`}
                 card={currentCard}
                 onShowDetails={handleShowDetails}
                 onAnswerSubmit={handleAnswerSubmit}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
-  const [cards, setCards] = useState([]);
+  
   const [isFlipped, setIsFlipped] = useState(false);
   const [userAnswer, setUserAnswer] = useState('');
    const [showValidation, setShowValidation] = useState(false);
