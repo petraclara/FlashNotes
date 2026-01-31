@@ -102,7 +102,7 @@ const handleAddTopic = async () => {
   setActiveTopic(newTopic);
 
   try {
-    const res = await fetch('http://localhost:8080/chat', {
+    const res = await fetch('https://flashnotes-0d1x.onrender.com/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ input: `Generate flashcard questions about ${newTopic}` })
@@ -145,8 +145,21 @@ const handleAddTopic = async () => {
 
 
   const handleRemoveTopic = (topicToRemove) => {
-    setTopics(topics.filter(topic => topic !== topicToRemove));
-  };
+  const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+  delete memory[topicToRemove];
+  localStorage.setItem('flashcardMemory', JSON.stringify(memory));
+
+  setTopics(prev => prev.filter(t => t !== topicToRemove));
+  setMemoryTopics(prev => prev.filter(t => t !== topicToRemove));
+
+  if (activeTopic === topicToRemove) {
+    setActiveTopic(null);
+    setCards([]);
+    setCurrentCardIndex(0);
+    setNewTopic('');
+  }
+};
+
 
 const handleTopicClick = (topic) => {
   const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
