@@ -1,5 +1,7 @@
 import React from 'react';
 
+const [expandedId, setExpandedId] = React.useState(null);
+
 const Sidebar = ({ 
   history, 
   currentCard, 
@@ -38,6 +40,13 @@ const Sidebar = ({
       );
     }
   };
+
+  const getAccuracy = (topic) => {
+  const stat = topicStats?.[topic];
+  if (!stat || stat.attempts === 0) return null;
+  return Math.round((stat.correct / stat.attempts) * 100);
+};
+
 
   const getStatusColor = (correct) => {
     if (correct === true) return 'text-green-400';
@@ -95,6 +104,22 @@ const Sidebar = ({
             </svg>
             Study Topics
           </h3>
+
+          <div className="mb-4">
+  <label className="text-sm text-purple-300 block mb-1">
+    Number of cards
+  </label>
+  <select
+    value={cardCount}
+    onChange={(e) => setCardCount(Number(e.target.value))}
+    className="w-full bg-purple-800/40 text-white rounded-lg p-2"
+  >
+    {[1,2,3,5,8,10].map(n => (
+      <option key={n} value={n}>{n}</option>
+    ))}
+  </select>
+</div>
+
           
           {/* Add Topic Input */}
           <div className="flex gap-2 mb-4">
@@ -109,7 +134,7 @@ const Sidebar = ({
             <button
               onClick={onAddTopic}
               className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-lg transition-all"
-            >
+            ><span className="text-white font-medium">{topic}</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19" />
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -132,7 +157,15 @@ const Sidebar = ({
                       <path d="M2 12l10 5 10-5" />
                     </svg>
                   </div>
-                  <span className="text-white font-medium">{topic}</span>
+                  <div>
+  <span className="text-white font-medium">{topic}</span>
+  {getAccuracy(topic) !== null && (
+    <div className="text-xs text-purple-300">
+      Accuracy: {getAccuracy(topic)}%
+    </div>
+  )}
+</div>
+
                 </div>
                 <button
                   onClick={() => onRemoveTopic(topic)}
@@ -179,9 +212,12 @@ const Sidebar = ({
           </div>
           {history.map((item) => (
             <div
-              key={item.id}
-              className="p-4 hover:bg-purple-700/20 rounded-xl transition-colors cursor-pointer group"
-            >
+  onClick={() =>
+    setExpandedId(expandedId === item.id ? null : item.id)
+  }
+  className="p-4 hover:bg-purple-700/20 rounded-xl transition-colors cursor-pointer group"
+>
+
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-purple-600/30 rounded-lg group-hover:bg-purple-500/40 transition-colors">
                   {getIcon(item.action)}
@@ -227,6 +263,19 @@ const Sidebar = ({
             </div>
           </div>
         </div>
+        {expandedId === item.id && (
+  <div className="mt-3 text-sm text-purple-200 bg-purple-900/40 p-3 rounded-lg">
+    <p className="font-semibold text-white mb-1">
+      {item.question}
+    </p>
+    <p className="italic">{item.answer}</p>
+    <p className="mt-2 text-xs text-purple-400">
+      Topic: {item.topic} • Accuracy: {getAccuracy(item.topic) ?? "—"}%
+    </p>
+  </div>
+)}
+
+
       </div>
     </div>
   );

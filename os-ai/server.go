@@ -14,9 +14,8 @@ import (
     "github.com/joho/godotenv"
 )
 
-/* =======================
-   MODELS
-======================= */
+
+  // MODELS
 
 type GenerateRequest struct {
 	Topic string `json:"topic"`
@@ -70,11 +69,10 @@ func enableCORS(w http.ResponseWriter, r *http.Request) bool {
 	return false
 }
 
-/* =======================
-   PROMPTS
-======================= */
 
-func flashNotesPrompt(topic, level string) string {
+  // PROMPTS
+
+func flashNotesPrompt(topic, level string, count int) string {
 	return `
 You are Flash Notes, an AI study agent for active recall.
 
@@ -88,7 +86,7 @@ Rules:
 Topic: ` + topic + `
 Education Level: ` + level + `
 
-Generate exactly 3 flashcards.
+Generate exactly ` + strconv.Itoa(count) + ` flashcards.
 
 Return ONLY valid JSON:
 [
@@ -109,9 +107,8 @@ Question: ` + question + `
 `
 }
 
-/* =======================
-   MEMORY HELPERS
-======================= */
+
+  // MEMORY HELPERS
 
 func loadMemory() Memory {
 	data, err := os.ReadFile("memory.json")
@@ -136,9 +133,6 @@ func saveSession(topic, level string, cards []FlashCard) {
 	_ = os.WriteFile("memory.json", data, 0644)
 }
 
-/* =======================
-   MAIN
-======================= */
 
 func main() {
     err := godotenv.Load()
@@ -165,7 +159,7 @@ if err != nil {
 - No explanations
 - No punctuation`
 
-	/* ---------- /chat ---------- */
+	// ---------- /chat ---------- 
 	http.HandleFunc("/chat", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -202,7 +196,7 @@ if err != nil {
 		})
 	})
 
-	/* ---------- /generate ---------- */
+	// ---------- /generate ---------- 
 	http.HandleFunc("/generate", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -244,7 +238,7 @@ if err != nil {
 		json.NewEncoder(w).Encode(GenerateResponse{Cards: cards})
 	})
 
-	/* ---------- /clarify ---------- */
+	// ---------- /clarify ----------
 	http.HandleFunc("/clarify", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -278,7 +272,7 @@ if err != nil {
 		})
 	})
 
-	/* ---------- /history ---------- */
+	// ---------- /history ----------
 	http.HandleFunc("/history", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Origin", "*")

@@ -94,6 +94,101 @@
         }
       ],
       "timestamp": "2026-01-31T02:46:06+03:00"
+    },
+    {
+      "topic": "matrix",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the dimension of an invertible matrix?",
+          "answer": "n x n"
+        },
+        {
+          "question": "What is the product of a row matrix and a column matrix called?",
+          "answer": "Scalar"
+        },
+        {
+          "question": "What is the term for an element in a matrix?",
+          "answer": "Entry"
+        }
+      ],
+      "timestamp": "2026-01-31T02:56:58+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is Narrow or Weak AI?",
+          "answer": "AI that performs a narrow task, like playing chess or recognizing speech."
+        },
+        {
+          "question": "What is Supervised Learning?",
+          "answer": "AI learning from labeled data with correct answers provided."
+        },
+        {
+          "question": "What is Backpropagation?",
+          "answer": "An algorithm used in Neural Networks to update model weights during training."
+        }
+      ],
+      "timestamp": "2026-01-31T02:57:08+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the term for the process by which an AI system improves its performance over time without being explicitly programmed to do so?",
+          "answer": "Machine Learning"
+        },
+        {
+          "question": "Which type of AI system uses a knowledge base to answer questions and provide information?",
+          "answer": "Expert System"
+        },
+        {
+          "question": "What is the term for a machine learning model that is trained on a given task and then fine-tuned on a related task for continuous learning?",
+          "answer": "Transfer Learning"
+        }
+      ],
+      "timestamp": "2026-01-31T02:57:09+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the primary goal of an AI model's training process?",
+          "answer": "To minimize the error between predicted and actual outputs"
+        },
+        {
+          "question": "What is the term for a machine's ability to understand and interpret human language?",
+          "answer": "Natural Language Processing (NLP)"
+        },
+        {
+          "question": "Which type of AI algorithm learns from experience by interacting with its environment?",
+          "answer": "Reinforcement Learning"
+        }
+      ],
+      "timestamp": "2026-01-31T02:57:17+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "question": "What is the primary goal of active recall in learning?",
+          "answer": "To strengthen memory and improve long-term retention."
+        },
+        {
+          "question": "What is the difference between narrow and wide NLP?",
+          "answer": "Narrow NLP focuses on one specific task, whereas wide NLP has a broader range of applications."
+        },
+        {
+          "question": "What is the definition of artificial general intelligence?",
+          "answer": "AGI refers to a machine's ability to perform any intellectual task that a human can do."
+        }
+      ],
+      "timestamp": "2026-01-31T02:57:19+03:00"
     }
   ]
 }

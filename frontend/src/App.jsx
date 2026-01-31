@@ -18,6 +18,8 @@ function App() {
   const [cards, setCards] = useState([]);
   const [history, setHistory] = useState([]);
   const currentCard = cards[currentCardIndex];
+  const [cardCount, setCardCount] = useState(3);
+  const [topicStats, setTopicStats] = useState({});
 
 
   useEffect(() => {
@@ -31,6 +33,17 @@ useEffect(() => {
     { id: 1, front: "Test question?", back: "Test answer" }
   ]);
 }, []);
+
+  useEffect(() => {
+  localStorage.setItem("studyMemory", JSON.stringify(topicStats));
+}, [topicStats]);
+
+  useEffect(() => {
+  const saved = localStorage.getItem("studyMemory");
+  if (saved) setTopicStats(JSON.parse(saved));
+}, []);
+
+
 
 
   useEffect(() => {
@@ -85,6 +98,30 @@ useEffect(() => {
     setSelectedCard(card);
     setShowDetailsModal(true);
   };
+
+  const recordResult = (topic, cardId, isCorrect) => {
+  setTopicStats(prev => {
+    const t = prev[topic] || { attempts: 0, correct: 0, cards: {} };
+    const c = t.cards[cardId] || { attempts: 0, correct: 0 };
+
+    return {
+      ...prev,
+      [topic]: {
+        attempts: t.attempts + 1,
+        correct: t.correct + (isCorrect ? 1 : 0),
+        cards: {
+          ...t.cards,
+          [cardId]: {
+            attempts: c.attempts + 1,
+            correct: c.correct + (isCorrect ? 1 : 0),
+            lastResult: isCorrect
+          }
+        }
+      }
+    };
+  });
+};
+
 
   const handleAnswerSubmit = (cardId, answer) => {
     const newHistoryItem = {
@@ -203,6 +240,8 @@ useEffect(() => {
   newTopic={newTopic}
   setNewTopic={setNewTopic}
   onAddTopic={handleAddTopic}
+  cardCount={cardCount}
+  setCardCount={setCardCount}
   onRemoveTopic={handleRemoveTopic}
   onClose={() => setSidebarOpen(false)}
 />
