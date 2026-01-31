@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/openai/openai-go/v2"
@@ -20,12 +21,29 @@ import (
 type GenerateRequest struct {
 	Topic string `json:"topic"`
 	Level string `json:"level"`
+	CardCount int    `json:"cardCount"`
 }
 
-type FlashCard struct {
-	Question string `json:"question"`
-	Answer   string `json:"answer"`
+type CardStats struct {
+	Attempts   int  `json:"attempts"`
+	Correct    int  `json:"correct"`
+	LastResult bool `json:"lastResult"`
 }
+
+type AnswerRequest struct {
+	Topic   string `json:"topic"`
+	CardID  int    `json:"cardId"`
+	Correct bool   `json:"correct"`
+}
+
+
+type FlashCard struct {
+	ID       int       `json:"id"`
+	Question string    `json:"question"`
+	Answer   string    `json:"answer"`
+	Stats    CardStats `json:"stats"`
+}
+
 
 type GenerateResponse struct {
 	Cards []FlashCard `json:"cards"`
@@ -36,11 +54,18 @@ type ClarifyRequest struct {
 	Question string `json:"question"`
 }
 
+type SessionStats struct {
+	Attempts int `json:"attempts"`
+	Correct  int `json:"correct"`
+}
+
+
 type Session struct {
-	Topic     string      `json:"topic"`
-	Level     string      `json:"level"`
-	Cards     []FlashCard `json:"cards"`
-	Timestamp string      `json:"timestamp"`
+	Topic     string        `json:"topic"`
+	Level     string        `json:"level"`
+	Cards     []FlashCard   `json:"cards"`
+	Stats     SessionStats  `json:"stats"`
+	Timestamp string        `json:"timestamp"`
 }
 
 type Memory struct {
@@ -123,11 +148,16 @@ func loadMemory() Memory {
 func saveSession(topic, level string, cards []FlashCard) {
 	mem := loadMemory()
 	mem.Sessions = append(mem.Sessions, Session{
-		Topic:     topic,
-		Level:     level,
-		Cards:     cards,
-		Timestamp: time.Now().Format(time.RFC3339),
-	})
+	Topic: topic,
+	Level: level,
+	Cards: cards,
+	Stats: SessionStats{
+		Attempts: 0,
+		Correct:  0,
+	},
+	Timestamp: time.Now().Format(time.RFC3339),
+})
+
 
 	data, _ := json.MarshalIndent(mem, "", "  ")
 	_ = os.WriteFile("memory.json", data, 0644)
@@ -213,7 +243,13 @@ if err != nil {
 		var req GenerateRequest
 		json.NewDecoder(r.Body).Decode(&req)
 
-		prompt := flashNotesPrompt(req.Topic, req.Level)
+		count := req.CardCount
+if count <= 0 {
+	count = 4 // safe default
+}
+
+prompt := flashNotesPrompt(req.Topic, req.Level, count)
+
 
 		params := openai.ChatCompletionNewParams{
 			Model: "meta-llama/llama-3.1-8b-instruct",
@@ -228,11 +264,29 @@ if err != nil {
 			return
 		}
 
-		var cards []FlashCard
-		if err := json.Unmarshal([]byte(res.Choices[0].Message.Content), &cards); err != nil {
-			http.Error(w, "Invalid model output", 500)
-			return
-		}
+		var rawCards []struct {
+	Question string `json:"question"`
+	Answer   string `json:"answer"`
+}
+
+if err := json.Unmarshal([]byte(res.Choices[0].Message.Content), &rawCards); err != nil {
+	http.Error(w, "Invalid model output", 500)
+	return
+}
+
+cards := make([]FlashCard, len(rawCards))
+for i, c := range rawCards {
+	cards[i] = FlashCard{
+		ID:       i + 1,
+		Question: c.Question,
+		Answer:   c.Answer,
+		Stats: CardStats{
+			Attempts:   0,
+			Correct:    0,
+			LastResult: false,
+		},
+	}
+}
 
 		saveSession(req.Topic, req.Level, cards)
 		json.NewEncoder(w).Encode(GenerateResponse{Cards: cards})
@@ -262,7 +316,7 @@ if err != nil {
 		}
 
 		res, err := client.Chat.Completions.New(context.Background(), params)
-		if err != nil {
+		if err != nil {// ✅ REQUIRED
 			http.Error(w, err.Error(), 500)
 			return
 		}
@@ -271,6 +325,50 @@ if err != nil {
 			"clarification": res.Choices[0].Message.Content,
 		})
 	})
+
+	http.HandleFunc("/answer", func(w http.ResponseWriter, r *http.Request) {
+	if enableCORS(w, r) {
+		return
+	}
+
+	if r.Method != http.MethodPost {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	var req AnswerRequest
+	json.NewDecoder(r.Body).Decode(&req)
+
+	mem := loadMemory()
+
+	for si := range mem.Sessions {
+		if mem.Sessions[si].Topic == req.Topic {
+			mem.Sessions[si].Stats.Attempts++
+			if req.Correct {
+				mem.Sessions[si].Stats.Correct++
+			}
+
+			for ci := range mem.Sessions[si].Cards {
+				if mem.Sessions[si].Cards[ci].ID == req.CardID {
+					card := &mem.Sessions[si].Cards[ci]
+					card.Stats.Attempts++
+					if req.Correct {
+						card.Stats.Correct++
+					}
+					card.Stats.LastResult = req.Correct
+					break
+				}
+			}
+			break
+		}
+	}
+
+	data, _ := json.MarshalIndent(mem, "", "  ")
+	_ = os.WriteFile("memory.json", data, 0644)
+
+	w.WriteHeader(http.StatusOK)
+})
+
 
 	// ---------- /history ----------
 	http.HandleFunc("/history", func(w http.ResponseWriter, r *http.Request) {

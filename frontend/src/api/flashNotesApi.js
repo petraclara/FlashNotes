@@ -1,15 +1,19 @@
 import { API_BASE_URL } from "../config/api";
 
-export async function generateFlashcards(topic, level) {
-  const res = await fetch(`${API_BASE_URL}/generate`, {
+export async function generateFlashcards(topic, level, cardCount) {
+  const res = await fetch("http://localhost:8080/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ topic, level }),
+    body: JSON.stringify({
+      topic,
+      level,
+      cardCount,
+    }),
   });
 
-  if (!res.ok) throw new Error("Failed to generate cards");
   return res.json();
 }
+
 
 export async function clarifyQuestion(topic, question) {
   const res = await fetch(`${API_BASE_URL}/clarify`, {

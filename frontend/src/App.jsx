@@ -24,9 +24,35 @@ function App() {
 
   useEffect(() => {
   fetchHistory()
-    .then((mem) => setHistory(mem.sessions || []))
+    .then((mem) => {
+      const sessions = mem.sessions || [];
+
+      const events = sessions.flatMap(session =>
+        session.cards.map(card => ({
+          id: `${session.timestamp}-${card.id}`,
+          action: "Reviewed",
+          topic: session.topic,
+          cardId: card.id,
+          question: card.question,
+          answer: card.answer,
+          correct: card.stats.lastResult,
+          attempts: card.stats.attempts,
+          accuracy:
+            card.stats.attempts > 0
+              ? Math.round((card.stats.correct / card.stats.attempts) * 100)
+              : null,
+          timestamp: new Date(session.timestamp).toLocaleString(),
+          details: {
+            difficulty: "Adaptive"
+          }
+        }))
+      );
+
+      setHistory(events);
+    })
     .catch(console.error);
 }, []);
+
 
 useEffect(() => {
   setCards([
@@ -51,19 +77,28 @@ useEffect(() => {
     setIsLoading(true);
     try {
       const res = await generateFlashcards(
-        "AI Concepts",
-        "Undergraduate"
+        topics[0] || "AI Concepts",
+        level,
+        cardCount 
       );
+
 
       console.log("Generated cards:", res.cards);
 
 
       setCards(
-  res.cards.map((c, idx) => ({
-    id: idx + 1,
+  res.cards.map((c) => ({
+    id: c.id,
     question: c.question,
     answer: c.answer,
-    details: c.details || { difficulty: "Adaptive" },
+    stats: c.stats, 
+    details: {
+      difficulty: "Adaptive",
+      lastReviewed: new Date().toLocaleString(),
+      source: "AI Generated",
+      categories: topics.length ? topics : ["General"],
+      examples: []
+    }
   }))
 );
 
@@ -123,52 +158,54 @@ useEffect(() => {
 };
 
 
-  const handleAnswerSubmit = (cardId, answer) => {
-    const newHistoryItem = {
-      id: history.length + 1,
-      action: 'Reviewed',
-      cardId,
-      timestamp: new Date().toLocaleString(),
-      correct: Math.random() > 0.5 // Mock validation
-    };
-    setHistory([newHistoryItem, ...history]);
+  const handleAnswerSubmit = (cardId, isCorrect) => {
+  const entry = {
+    id: Date.now(),
+    action: "Reviewed",
+    cardId,
+    timestamp: new Date().toISOString(),
+    correct: isCorrect,
+    question: currentCard.question,
+    answer: currentCard.answer,
+    topic: activeTopic,
   };
+
+  setHistory((prev) => [entry, ...prev]);
+
+  if (isCorrect !== null) {
+    recordResult(activeTopic, cardId, isCorrect);
+  }
+};
+
 
   const handleAddTopic = async () => {
   if (!newTopic.trim()) return;
 
   setIsLoading(true);
-
   try {
-    const res = await generateFlashcards(newTopic, "Undergraduate");
+    const res = await generateFlashcards(
+      newTopic,
+      level,
+      cardCount
+    );
 
-    if (!res?.cards || res.cards.length === 0) {
-      console.error("No cards returned");
-      return;
-    }
-
-    console.log("Submitting topic:", newTopic);
-
-
-    const formattedCards = res.cards.map((c, idx) => ({
+    const formatted = res.cards.map((c, idx) => ({
       id: idx + 1,
+      topic: newTopic,
       question: c.question,
       answer: c.answer,
-      details: { difficulty: "Adaptive" },
+      stats: c.stats,
+      details: c.details || {}
     }));
 
-    setCards(formattedCards);
+    setCards(formatted);
     setCurrentCardIndex(0);
-
-    setTopics((prev) => [...prev, newTopic]);
+    setTopics(prev => [...prev, newTopic]);
     setNewTopic("");
-  } catch (err) {
-    console.error("Generate failed:", err);
   } finally {
     setIsLoading(false);
   }
 };
-
 
 
   const handleRemoveTopic = (topicToRemove) => {
@@ -199,7 +236,7 @@ useEffect(() => {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-200 to-purple-100 bg-clip-text text-transparent">
-                    AI Learning Flashcards
+                    Learning Flashcards
                   </h1>
                   <p className="text-sm text-purple-300">Powered by AI Agent • Interactive Learning Platform</p>
                 </div>
@@ -259,8 +296,7 @@ useEffect(() => {
               <div className="md:hidden mb-6 p-4 bg-gradient-to-r from-purple-800/30 to-purple-900/20 rounded-2xl border border-purple-700/30">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-purple-300">Currently studying</p>
-                    <p className="font-semibold">AI Concepts & Machine Learning</p>
+                    <p className="text-sm text-purple-300">Studying</p>
                   </div>
                   <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
                 </div>

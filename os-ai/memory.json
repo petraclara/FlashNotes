@@ -5,18 +5,40 @@
       "level": "Grade 5",
       "cards": [
         {
+          "id": 0,
           "question": "What is the main energy source for plants to grow?",
-          "answer": "Sunlight"
+          "answer": "Sunlight",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What do plants release from their leaves as a waste product?",
-          "answer": "Oxygen"
+          "answer": "Oxygen",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for the process by which plants make their own food?",
-          "answer": "Photosynthesis"
+          "answer": "Photosynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-30T22:57:42+03:00"
     },
     {
@@ -24,18 +46,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the fundamental concept in AI where an agent learns from experience and improves its performance on a task?",
-          "answer": "Reinforcement Learning"
+          "answer": "Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What type of neural network is characterized by its activations being discrete values between 0 and 1, making it suitable for discrete output problems?",
-          "answer": "Multilayer Perceptron (a type of Neural Network)"
+          "answer": "Multilayer Perceptron (a type of Neural Network)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "In Deep Learning, what is the process of training a model on a dataset to make predictions and then using a new, unseen dataset to evaluate its performance?",
-          "answer": "Cross-Validation"
+          "answer": "Cross-Validation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:42:00+03:00"
     },
     {
@@ -43,18 +87,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the primary goal of deep reinforcement learning?",
-          "answer": "Optimizing a reward function to make optimal decisions"
+          "answer": "Optimizing a reward function to make optimal decisions",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for a machine learning model that can learn from raw, unstructured data?",
-          "answer": "Tabular Model"
+          "answer": "Tabular Model",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the difference between a neural network and a perceptron?",
-          "answer": "A neural network has multiple layers, whereas a perceptron has only one layer"
+          "answer": "A neural network has multiple layers, whereas a perceptron has only one layer",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:42:00+03:00"
     },
     {
@@ -62,18 +128,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the process by which stars like our Sun generate energy?",
-          "answer": "Nuclear Fusion"
+          "answer": "Nuclear Fusion",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the scientific term for the 'building blocks of life'?",
-          "answer": "Cells"
+          "answer": "Cells",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for the movement of tectonic plates that results in the creation of mountain ranges?",
-          "answer": "Plate Uplift"
+          "answer": "Plate Uplift",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:42:36+03:00"
     },
     {
@@ -81,18 +169,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the process by which plants convert light energy from the sun into chemical energy?",
-          "answer": "Photossynthesis"
+          "answer": "Photossynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
-          "answer": "Igneous Rock"
+          "answer": "Igneous Rock",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the scientific term for the movement of molecules from an area of high concentration to an area of low concentration through a permeable membrane?",
-          "answer": "Osmosis"
+          "answer": "Osmosis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:46:06+03:00"
     },
     {
@@ -100,18 +210,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the dimension of an invertible matrix?",
-          "answer": "n x n"
+          "answer": "n x n",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the product of a row matrix and a column matrix called?",
-          "answer": "Scalar"
+          "answer": "Scalar",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for an element in a matrix?",
-          "answer": "Entry"
+          "answer": "Entry",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:56:58+03:00"
     },
     {
@@ -119,18 +251,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is Narrow or Weak AI?",
-          "answer": "AI that performs a narrow task, like playing chess or recognizing speech."
+          "answer": "AI that performs a narrow task, like playing chess or recognizing speech.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is Supervised Learning?",
-          "answer": "AI learning from labeled data with correct answers provided."
+          "answer": "AI learning from labeled data with correct answers provided.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is Backpropagation?",
-          "answer": "An algorithm used in Neural Networks to update model weights during training."
+          "answer": "An algorithm used in Neural Networks to update model weights during training.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:57:08+03:00"
     },
     {
@@ -138,18 +292,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the term for the process by which an AI system improves its performance over time without being explicitly programmed to do so?",
-          "answer": "Machine Learning"
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "Which type of AI system uses a knowledge base to answer questions and provide information?",
-          "answer": "Expert System"
+          "answer": "Expert System",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for a machine learning model that is trained on a given task and then fine-tuned on a related task for continuous learning?",
-          "answer": "Transfer Learning"
+          "answer": "Transfer Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:57:09+03:00"
     },
     {
@@ -157,18 +333,40 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the primary goal of an AI model's training process?",
-          "answer": "To minimize the error between predicted and actual outputs"
+          "answer": "To minimize the error between predicted and actual outputs",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the term for a machine's ability to understand and interpret human language?",
-          "answer": "Natural Language Processing (NLP)"
+          "answer": "Natural Language Processing (NLP)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "Which type of AI algorithm learns from experience by interacting with its environment?",
-          "answer": "Reinforcement Learning"
+          "answer": "Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:57:17+03:00"
     },
     {
@@ -176,19 +374,4825 @@
       "level": "Undergraduate",
       "cards": [
         {
+          "id": 0,
           "question": "What is the primary goal of active recall in learning?",
-          "answer": "To strengthen memory and improve long-term retention."
+          "answer": "To strengthen memory and improve long-term retention.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the difference between narrow and wide NLP?",
-          "answer": "Narrow NLP focuses on one specific task, whereas wide NLP has a broader range of applications."
+          "answer": "Narrow NLP focuses on one specific task, whereas wide NLP has a broader range of applications.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         },
         {
+          "id": 0,
           "question": "What is the definition of artificial general intelligence?",
-          "answer": "AGI refers to a machine's ability to perform any intellectual task that a human can do."
+          "answer": "AGI refers to a machine's ability to perform any intellectual task that a human can do.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
         }
       ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
       "timestamp": "2026-01-31T02:57:19+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network in AI?",
+          "answer": "Pattern recognition and learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised learning uses labeled data, while unsupervised learning does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the ability of a machine learning model to improve its performance on a task over time?",
+          "answer": "Adaptation or Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T06:27:43+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network in AI?",
+          "answer": "Pattern recognition and prediction",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the process by which an AI system learns to make decisions based on data?",
+          "answer": "Machine learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is a type of AI that mimics human intelligence and can perform tasks that typically require human cognition?",
+          "answer": "Artificial general intelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the evaluation of AI systems based on human-like intelligence and behavior?",
+          "answer": "Artificial intelligence benchmarking",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T06:46:47+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network in machine learning?",
+          "answer": "To learn and make predictions or decisions by recognizing patterns in data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a machine learning model that improves its performance on a task as it receives more data?",
+          "answer": "Supervised learning model",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between a supervised and unsupervised learning algorithm?",
+          "answer": "A supervised learning algorithm requires labeled data to learn, while an unsupervised learning algorithm does not require labeled data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a machine learning model that can learn from experience and improve its performance over time, similar to human learning?",
+          "answer": "Reinforcement learning model",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T06:46:49+03:00"
+    },
+    {
+      "topic": "sci grade 9",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main goal of the scientific method?",
+          "answer": "To seek answers to a question through experimentation and observation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the process by which water moves through a plant, from the roots to the leaves, and is then released into the air as water vapor?",
+          "answer": "Transpiration.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "The law of conservation of what states that energy cannot be created or destroyed, only converted from one form to another?",
+          "answer": "Energy",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a scientist's well-substantiated explanation of some aspect of the natural world, based on a body of facts that have been repeatedly confirmed through observation and experiment?",
+          "answer": "Theory",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T06:47:40+03:00"
+    },
+    {
+      "topic": "physics",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the difference between kinetic energy and potential energy?",
+          "answer": "Kinetic energy is the energy of motion, while potential energy is stored energy.",
+          "stats": {
+            "attempts": 1,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the formula for the center of mass of a system of particles?",
+          "answer": "Σ(m_i * r_i) / Σm_i",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the principle of conservation of momentum?",
+          "answer": "The total momentum of a closed system remains constant",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the difference between a conjugate pair of variables in thermodynamics?",
+          "answer": "They are variables that are related through a fundamental equation of state",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 1,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T06:52:45+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main goal of Machine Learning?",
+          "answer": "To develop algorithms that can learn and improve from data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between Narrow AI and General AI?",
+          "answer": "Narrow AI is designed for a specific task, while General AI can perform any intellectual task",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of making a model more robust by feeding it noisy or incorrect data?",
+          "answer": "Data augmentation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a key advantage of Neural Networks?",
+          "answer": "Their ability to learn complex patterns in data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:03+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the backpropagation algorithm in neural networks?",
+          "answer": "To minimize the difference between the predicted output and the actual output.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a machine learning model that learns to approximate a function that maps inputs to outputs?",
+          "answer": "Function Approximation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "In the context of artificial intelligence, what does 'deep' refer to in deep learning?",
+          "answer": "The number of hidden layers in a neural network.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a type of machine learning where a model is trained to perform a specific task, such as image classification or language translation?",
+          "answer": "Supervised Learning.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:03+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neuron in a neural network?",
+          "answer": "To transmit information to other neurons.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for an ML model that improves its performance on a task over time with experience?",
+          "answer": "Learning and Adaptation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the key advantage of a decision tree over other ML models?",
+          "answer": "Transparency and Human Understandability",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the process of representing a spoken word as a sequence of numbers?",
+          "answer": "Speech-to-Text",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:03+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Vanishing Gradient Problem in deep learning?",
+          "answer": "Preventing deep neural networks from being too reliant on early layers in the case of backpropagation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between Supervised and Unsupervised Learning?",
+          "answer": "Supervised learning involves labeled data, while unsupervised learning uses unlabeled data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the name of the popular AI framework written mainly in Python?",
+          "answer": "TensorFlow.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What type of data structure is typically used for storing and manipulating numerical data in neural networks?",
+          "answer": "Tensor.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:04+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "AI designed to perform a specific task, like virtual assistants or image recognition.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is Deep Learning?",
+          "answer": "A type of Machine Learning that uses Neural Networks with multiple layers to learn complex patterns.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between a Neural Network and a Deep Neural Network?",
+          "answer": "Neural network has multiple layers, while a deep Neural network has many more, allowing for more complex learning.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the goal of the Backpropagation algorithm?",
+          "answer": "To adjust the predictions of the output layer by cyclically reversing the error.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for an AI system that can learn to make decisions based on experience, without being explicitly programmed for each task?",
+          "answer": "Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which neural network technique involves training a model by comparing its predictions to the output of a labelled dataset?",
+          "answer": "Supervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the name of theivé process that allows a biased and underspecified neural network to progressively learn a task without human intervention?",
+          "answer": "Widrow-Hoff Learning Rule",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "Which AI technique uses a teacher, referred to as a clustering algorithm, to label training data and improve the accuracy of unsupervised learning models?",
+          "answer": "Self-Labelling Multiple Iterative Refining (SMILE or SMOR)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "Predicting outcomes based on labeled training data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow intelligence and general intelligence in AI?",
+          "answer": "Narrow intelligence focuses on a specific task, while general intelligence applies to multiple tasks",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is backpropagation, and what is its role in neural network training?",
+          "answer": "Backpropagation is an algorithm used to update neural network weights and biases during training",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the Vanishing Gradient Problem in neural networks, and how is it addressed?",
+          "answer": "The Vanishing Gradient Problem occurs when gradients become too small during backpropagation, and it is addressed through the use of ReLU activation functions",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:52+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the key difference between narrow and general AI?",
+          "answer": "Narrow AI focuses on a single task, while general AI aims to perform any intellectual task.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for AI systems that use machine learning to improve their performance on a specific task?",
+          "answer": "Specialized AI",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Which AI paradigm involves training a machine learning model on a large dataset to learn complex patterns and relationships?",
+          "answer": "Deep learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the concept where an AI system learns from its own experiences and improves its performance over time?",
+          "answer": "Reinforcement learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:02:56+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of machine learning?",
+          "answer": "To make predictions or decisions based on data patterns.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between Narrow and General AI?",
+          "answer": "Narrow AI is designed to perform a specific task, whereas General AI can perform any intellectual task that a human can.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a machine learning model that improves its performance over time?",
+          "answer": "Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the concept of a 'black box' model in AI?",
+          "answer": "A model that is difficult to understand or interpret, even for the developers who created it.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:03:20+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Deep Q-Network (DQN) in Reinforcement Learning?",
+          "answer": "_approximating a value function, indicating the expected return or reward for each state.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which type of machine learning model is characterized by a feedforward neural network without recurrent or convolutional components?",
+          "answer": "Fully Connected Network",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a class of unsupervised learning algorithms that group similar data points into clusters based on their features?",
+          "answer": "Clustering",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the key advantage of using narrow and deep neural networks over wide and shallow ones?",
+          "answer": "Their ability to represent hierarchical features and are more computationally efficient.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:03:23+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main difference between Narrow AI and General AI?",
+          "answer": "Narrow AI is designed to perform a specific task, while General AI has the ability to understand, learn, and apply knowledge across a wide range of tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the problem of an AI system being unable to understand the context or nuances of human language?",
+          "answer": "Natural Language Processing Limitations",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the process by which an AI system improves its performance on a task over time?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the data that is used to train an AI model, including both labeled and unlabeled examples?",
+          "answer": "Training Data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:20:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of a supervised learning algorithm?",
+          "answer": "To learn a function that maps inputs to outputs based on a labeled dataset.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between a neural network and a decision tree?",
+          "answer": "A neural network is a non-linear model with multiple layers, whereas a decision tree is a linear model that splits data into smaller subsets.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is overfitting in machine learning, and how can it be mitigated?",
+          "answer": "Overfitting occurs when a model is too complex and performs well on training data but poorly on new data; it can be mitigated through regularization techniques, data augmentation, and cross-validation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a type of AI that learns from experience and improves its performance over time?",
+          "answer": "Deep learning.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:20:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network in AI?",
+          "answer": "Pattern recognition",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised learning requires labeled data, while unsupervised learning does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a machine that can learn and improve on its own?",
+          "answer": "Autonomous learning system",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the type of machine learning where a model is trained on a specific task, then deployed to perform that task?",
+          "answer": "Offline learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:41+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the training process in machine learning?",
+          "answer": "Minimizing the loss function",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "In a neural network, what is the term for the transmission of information between nodes?",
+          "answer": "Activation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between episodic and semantic memory in AI?",
+          "answer": "Experience-based vs. rule-based knowledge",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the process of selecting the most accurate model in the ensemble learning technique?",
+          "answer": "Voting",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:41+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of reinforcement learning in AI?",
+          "answer": "To learn optimal actions to maximize rewards or minimize penalties.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between narrow and general intelligence in AI?",
+          "answer": "Narrow intelligence is specialized for a specific task, while general intelligence is applicable across various tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the purpose of the Markov Decision Process (MDP) in AI decision-making?",
+          "answer": "To model and solve sequential decision problems under uncertainty.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the primary advantage of rule-based expert systems in AI?",
+          "answer": "To mimic human expertise by codifying knowledge into sets of production rules.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:42+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network's hidden layer?",
+          "answer": "To learn complex representations of data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a type of machine learning where an AI system learns from a human expert?",
+          "answer": "Imitation Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the primary benefit of using a decision tree algorithm in AI?",
+          "answer": "Interpretable results",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What type of optimization algorithm is commonly used to train neural networks?",
+          "answer": "Stochastic Gradient Descent",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:43+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Backpropagation algorithm in Neural Networks?",
+          "answer": "Error minimization",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between Narrow and Wide Narrow Neural Networks?",
+          "answer": "Width of layers",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a feedback loop in which output from a machine is used to train an algorithm?",
+          "answer": "Autonomy",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the name of the agenda for solving the credit assignment problem, introducing the concept of the error difference?",
+          "answer": "Credit Assignment Problem",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Perceptron algorithm in machine learning?",
+          "answer": "Binary classification",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key characteristic of a decision tree in machine learning?",
+          "answer": "Hierarchical representation of conditional probabilities",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of making predictions based on incomplete or noisy data in machine learning?",
+          "answer": "Imputation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the type of feedback used in reinforcement learning to update the policy of an agent?",
+          "answer": "Reward",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:31:46+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Deep Q-Networks (DQN) in Reinforcement Learning?",
+          "answer": "To learn an action-value function to determine the best action to take in a given state.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between Narrow AI and General AI?",
+          "answer": "Narrow AI is designed to perform a specific task, whereas General AI can perform any intellectual task that a human can.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the ability of a machine to understand and learn through language?",
+          "answer": "Natural Language Processing (NLP).",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the name of the famous AI algorithm that uses decision trees to classify data?",
+          "answer": "Id3.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:22+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for the process of creating and training an AI model?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What does a Supervised Learning algorithm do?",
+          "answer": "Predicts an output based on labeled input data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is an example of a type of Deep Neural Network architecture?",
+          "answer": "Convolutional Neural Network (CNN)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the phenomenon when a model learns to represent inputs that are not relevant to the task?",
+          "answer": "Overfitting",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:23+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Perceptron algorithm?",
+          "answer": "Binary classification",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is a Neuron's activation function?",
+          "answer": "Maps input to output through non-linearity",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised has labeled data, unsupervised does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a Gradient Descent algorithm used for?",
+          "answer": "Optimize model parameters for better fit",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:24+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "Focused on solving a specific task, like image recognition or language translation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is Artificial General Intelligence (AGI)?",
+          "answer": "Intelligence that surpasses human-level cognitive abilities, allowing for reasoning, learning, and problem-solving like humans.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is Machine Learning?",
+          "answer": "A subset of AI that involves training algorithms to make predictions or decisions based on data, enabling systems to learn from experience.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is Deep Learning?",
+          "answer": "A subfield of Machine Learning that uses neural networks with multiple layers to analyze and interpret complex data, like images or speech.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:26+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "It can perform a specific task but lacks general intelligence.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the Difference Between Supervised and Unsupervised Learning?",
+          "answer": "Supervised Learning involves predicting outcomes based on labeled data, while Unsupervised Learning discovers patterns in unlabeled data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the Turing Test for?",
+          "answer": "The Turing Test evaluates a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a Neural Network?",
+          "answer": "A Neural Network is a computer system inspired by the human brain, using interconnected nodes or 'neurons' to process and transmit information.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:28+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Long Short-Term Memory (LSTM) network?",
+          "answer": "It is a type of Recurrent Neural Network (RNN) that can learn and remember long-term dependencies in sequential data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the phenomenon where a machine learning model adapts to the noise in the training data and fails to generalize well on new data?",
+          "answer": "Overfitting.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is Gradient Descent, and how does it relate to neural network training?",
+          "answer": "Gradient Descent is an optimization algorithm that minimizes the loss function by adjusting the model's parameters in the direction of the negative gradient of the loss.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the difference between a supervised and unsupervised learning problem, in terms of the type of labels or feedback provided to the model?",
+          "answer": "In supervised learning, the model receives labeled training data, whereas in unsupervised learning, the model must identify patterns or structure in unlabeled data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:33:34+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What does the term 'supervised learning' refer to in the context of AI?",
+          "answer": "A type of machine learning where the model is trained on labeled data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the primary difference between a neural network and a decision tree?",
+          "answer": "Neural networks are based on artificial neural structure and function while decision trees are a tree-based model for prediction.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term 'overfitting' in machine learning and how can it be mitigated?",
+          "answer": "Overfitting occurs when a model is too complex and fits the training data too closely, to be mitigated regularization techniques can be applied.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term 'unsupervised learning' in the context of AI?",
+          "answer": "A type of machine learning where the model is not trained on labeled data and must find patterns in the data on its own.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:34:32+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of machine learning?",
+          "answer": "To make predictions or decisions based on data patterns",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow and general AI?",
+          "answer": "Narrow AI is designed to perform a specific task, while general AI possesses human-like intelligence across multiple tasks",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for AI systems that use machine learning to improve their performance over time?",
+          "answer": "Autonomous learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the supposed level of human-like intelligence that AI needs to achieve to be considered truly intelligent?",
+          "answer": "Singularity",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:34:36+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "Creating models that can make accurate predictions on unseen data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between weak and strong AI?",
+          "answer": "Weak AI is narrow or specialized, whereas strong AI is general and has human-like intelligence.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the ability of an AI model to improve its performance on a task over time with more data and experience?",
+          "answer": "Incremental learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is backpropagation in deep learning?",
+          "answer": "An algorithm used to update model weights during training to minimize the loss function.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:36:08+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Machine Learning paradigm?",
+          "answer": "Make predictions or decisions based on data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which type of AI system is designed to learn from data without human intervention?",
+          "answer": "Unsupervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a neural network with one input layer, one output layer, and one hidden layer?",
+          "answer": "Feedforward Neural Network",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "Which dataset is commonly used to evaluate the performance of Natural Language Processing models?",
+          "answer": "IMDB Dataset",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:36:09+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for a type of machine learning where an AI system is trained to make predictions or decisions based on a specific goal or objective?",
+          "answer": "Supervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "In deep learning, what is the name of the activation function that is often used as the final output layer to perform a single-unit Softmax operation?",
+          "answer": "Softmax",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the ability of a deep neural network to learn and represent hierarchical relationships between different levels of abstraction in data?",
+          "answer": "Hierarchical Representation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the phenomenon where an AI model becomes increasingly accurate at predicting its own performance, rather than the actual performance on a task?",
+          "answer": "Overfitting",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:37:00+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Gradient Booster algorithm in machine learning?",
+          "answer": "Improves the weak learners to increase overall model performance.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "How does the Perceptron algorithm update its weights?",
+          "answer": "Through the perceptron convergence theorem, weights are updated in a way that moves the separator to the desired class.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is meant by local vs global minima in the context of gradient descent?",
+          "answer": "Global minima refers to the lowest value of the cost function, while local minima is a local minimum of the cost function.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "At what point in an Artificial Neural Network's training cycle are activations computed for the output layer?",
+          "answer": "At the end of the forward pass when the input has propagated through all layers to the output layer.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:37:04+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To train a model to make predictions or classifications by optimizing a performance metric.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between narrow or weak AI and general or strong AI?",
+          "answer": "Narrow AI is designed to perform a specific task, while general AI aims to perform any intellectual task that a human can.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the ability of a machine learning model to improve its performance on a task over time?",
+          "answer": "Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the concept in AI where a machine can learn from raw data without being explicitly programmed?",
+          "answer": "Deep Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:37:04+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To learn a mapping between inputs and outputs based on labeled training data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for an AI model's ability to improve its performance over time on a task?",
+          "answer": "Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What type of AI system uses a set of if-then rules to make decisions?",
+          "answer": "Rule-based system",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the measure of a set of instances or a function's generalization ability to unseen data?",
+          "answer": "Bias",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:37:22+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "AI that performs a specific, limited task",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is Machine Learning?",
+          "answer": "A subset of AI that allows systems to learn from data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the key difference between supervised and unsupervised learning?",
+          "answer": "Supervised learning has labeled data, unsupervised does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a Neural Network?",
+          "answer": "A network of interconnected nodes (neurons) that process information",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:05+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Neural Turing Machine in Artificial Intelligence?",
+          "answer": "Memory addressing",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the name of the algorithm used for training Deep Learning models that involves a series of forward passes and backward passes?",
+          "answer": "Backpropagation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a machine learning model that can make predictions based on input data that it has seen before?",
+          "answer": "Supervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the key feature of a Reinforcement Learning agent that learns to take actions to maximize a reward?",
+          "answer": "Trial and error",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:05+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To learn from labeled data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a neural network that can learn and improve its performance on a task over time?",
+          "answer": "Deep learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of converting a problem into a form that can be solved by a computer?",
+          "answer": "Artificial intelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the type of machine learning where the algorithm learns from unlabeled data and looks for patterns?",
+          "answer": "Unsupervised learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:06+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network?",
+          "answer": "Machine Learning Model",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised involves labeled data, unsupervised does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the phenomenon where a model becomes better at predicting its training data than generalizing to new data?",
+          "answer": "Overfitting",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the key characteristic of a deep learning algorithm that enables it to learn hierarchical representations of data?",
+          "answer": "Abstraction",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:07+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main difference between Narrow AI and General AI?",
+          "answer": "Narrow AI focuses on a specific task, whereas General AI aims to perform any intellectual task a human can.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the primary goal of Machine Learning?",
+          "answer": "To develop algorithms that can learn from data and improve their performance on a task.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the key characteristic of a Deep Learning Model?",
+          "answer": "The use of multiple hidden layers to represent complex patterns in the data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a set of representations and algorithms for identifying objects within a scene?",
+          "answer": "Computer Vision",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:08+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for a computer program that can immunize a model against adversarial attacks?",
+          "answer": "Adversarial Training",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the main goal of the process by which a machine learning model continually improves its performance on a task?",
+          "answer": "Unsupervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What type of AI method involves teaching a new machine learning model on a subset of the existing model's data to avoid overfitting?",
+          "answer": "Transfer Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the study of how algorithms adapt to and rely less on explicit human feedback and more on interactions with its environment?",
+          "answer": "Online Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:10+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is narrow AI?",
+          "answer": "A type of AI that is designed to perform a specific task, such as image or speech recognition.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between weak and strong AI?",
+          "answer": "Weak AI is narrow AI, while strong AI would have human-like intelligence, capable of reasoning and problem-solving across multiple tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the problem of overfitting in machine learning?",
+          "answer": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on unseen data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a neural network?",
+          "answer": "A computer system modeled after the human brain, consisting of interconnected nodes (neurons) that process and transmit information.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:10+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for training an AI model using its own predictions to refine its accuracy?",
+          "answer": "Self-supervised learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What type of AI algorithms learn by example, based on a set of labeled training data?",
+          "answer": "Supervised learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for AI algorithms that adapt to changing data or environments?",
+          "answer": "Dynamic learning or Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a set of instructions, written in a programming language, used to train or create an AI model?",
+          "answer": "Model implementation or Neural Network Architecture",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:22+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "A type of AI that is designed to perform a single task, such as image recognition or language translation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the primary goal of Supervised Learning?",
+          "answer": "To enable the AI model to learn from labeled data by adjusting its parameters to minimize the error between predictions and actual outcomes.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is a Neural Network's hidden layer?",
+          "answer": "An intermediate layer between the input and output layers where complex representations and abstractions of the input data are created.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What does the term Backpropagation refer to?",
+          "answer": "A method used in training artificial neural networks to calculate the gradients of the loss function with respect to the network's weights and biases.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:48:24+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is supervised learning in AI?",
+          "answer": "Learning from labeled data examples",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between deep learning and machine learning?",
+          "answer": "Deep learning uses neural networks; machine learning uses various algorithms",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is Reinforcement Learning (RL)?",
+          "answer": "Learning through trial-and-error with rewards and feedback",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a Neural Network architecture?",
+          "answer": "Layers of interconnected nodes (neurons) processing inputs",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:07+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To train a model to make predictions on new, unseen data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a machine learning model that improves its performance over time through experience?",
+          "answer": "Adaptation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "In deep learning, what is the term for the process of adjusting the model's parameters to minimize the error between predictions and actual outputs?",
+          "answer": "Backpropagation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a type of machine learning where the model is trained on a dataset that is similar to the real-world data it will be used on?",
+          "answer": "Simulated Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:07+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of active learning in AI?",
+          "answer": "To improve the accuracy of machine learning models by actively engaging with the learning process.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for an AI system that can perform a task autonomously, without human intervention?",
+          "answer": "Autonomous agent.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between narrow or weak AI and general or strong AI?",
+          "answer": "Narrow AI is designed to perform a specific task, whereas general AI has the ability to understand, learn, and apply its intelligence to a wide range of tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is a neural network?",
+          "answer": "A complex system of interconnected nodes or 'neurons' that process and transmit information, inspired by the structure and function of the human brain.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:08+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of unsupervised learning in AI?",
+          "answer": "Discovering patterns and relationships in data without prior labels",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for an AI model's ability to improve its performance on a task over time with experience?",
+          "answer": "Adaptation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the fundamental concept in neural networks that enables neurons to learn and propagate information?",
+          "answer": "Synaptic plasticity",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What type of search algorithm is used to solve complex problems by iteratively exploring the problem space and selecting the best available solution?",
+          "answer": "Breadth-First Search",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:08+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the narrow AI approach?",
+          "answer": "To solve specific tasks with a narrow domain of expertise",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the ability of a machine to understand and generate human-like language?",
+          "answer": "Natural Language Processing (NLP)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Which AI concept refers to the study of algorithms that can learn and improve on their own?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the ability of a machine to perform a task that would typically require human intelligence, such as recognition and decision-making?",
+          "answer": "Artificial General Intelligence (AGI)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:10+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in artificial intelligence?",
+          "answer": "To predict outcomes for new, unseen data based on trained models.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between a neural network and a decision tree?",
+          "answer": "Neural networks are feedforward and resemble the human brain, while decision trees are hierarchical and tree-like.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What does the term 'overfitting' refer to in the context of machine learning?",
+          "answer": "When a model is too closely fit to the training data and fails to generalize to new, unseen data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:49:35+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for the process of an AI system improving its performance on a task over time without being explicitly programmed to do so?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "In reinforcement learning, what is the reward signal that an AI receives for taking an action?",
+          "answer": "Feedback Signal",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of designing an AI system to perform a task without being explicitly programmed, but rather by using high-level instructions and objectives?",
+          "answer": "Inverse Reinforcement Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:51:17+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Active Learning in AI?",
+          "answer": "To achieve faster learning and improve generalization using less data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a neural network that can learn multiple tasks simultaneously?",
+          "answer": "Multitask Learning.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between Weak Supervision and Strong Supervision in AI?",
+          "answer": "Weak Supervision uses incomplete or inaccurate labels, whereas Strong Supervision uses complete and accurate labels.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:51:18+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a neural network in AI?",
+          "answer": "Pattern recognition and learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow or weak AI and general or strong AI?",
+          "answer": "Narrow AI is designed for a specific task, while general AI can perform any intellectual task",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a machine learning model that improves its performance over time through experience?",
+          "answer": "Reinforcement learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:52:47+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of reinforcement learning in AI?",
+          "answer": "To optimize a policy or action selection to maximize a reward signal.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow and general artificial intelligence?",
+          "answer": "Narrow AI is designed to perform a specific task, whereas general AI aims to exhibit human-like intelligence across a wide range of tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a machine learning model that improves its performance on a task by learning from data with the help of a human in the loop?",
+          "answer": "Humans-in-the-loop learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T07:52:48+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Machine Learning?",
+          "answer": "To enable machines to learn from data and make predictions or decisions without being explicitly programmed.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between Weak AI and Strong AI?",
+          "answer": "Weak AI is task-specific and narrow, whereas Strong AI is general and can perform any intellectual task.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of Mindset in the context of AI?",
+          "answer": "A mindset refers to the underlying assumption or approach that influences the design and development of an AI system.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the ability of a machine to reason and draw conclusions based on available information?",
+          "answer": "Inference",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 5,
+          "question": "What is the term for the process of recreating human decision-making using complex mathematical models?",
+          "answer": "Decision Theory",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:15:27+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Neural Network in AI?",
+          "answer": "Weighted sum of inputs to generate an output.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the process where a model gets better at its task over time as it sees more examples?",
+          "answer": "Training",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between narrow or weak AI and general or strong AI?",
+          "answer": "Narrow AI can perform a single task while general AI can perform any intellectual task.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for the construction of an artificial neural network architecture by linked input and output nodes called?",
+          "answer": "Feedforward",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 5,
+          "question": "What is the term for the field of study that seeks to create machines that can perform tasks that typically require human intelligence?",
+          "answer": "Artificial Intelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:15:30+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the 'active recall' learning technique?",
+          "answer": "To strengthen memory and understanding by actively recalling information from memory rather than simply re-reading it.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the name of the AI system that I am an instance of?",
+          "answer": "Flash Notes",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term used to describe the process by which an AI model improves its performance over time?",
+          "answer": "Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:15:53+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Active Learning in AI?",
+          "answer": "To improve the model's ability to generalize and adapt to new data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between Weak Supervision and Strong Supervision in AI?",
+          "answer": "Weak supervision uses incomplete or uncertain labels, while Strong supervision uses accurate and complete labels",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of Overfitting in Machine Learning, and how can it be prevented?",
+          "answer": "Overfitting occurs when a model is too complex and fits the training data too well, making it prone to errors; it can be prevented through regularization techniques such as dropout, L1/L2 regularization",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:15:54+03:00"
+    },
+    {
+      "topic": "cars",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a camshaft in an internal combustion engine?",
+          "answer": "To open and close valves that allow air and fuel into the cylinders and exhaust gases out of the cylinders.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which car manufacturer is credited with the production of the first mass-produced electric vehicle?",
+          "answer": "Mitsubishi",
+          "stats": {
+            "attempts": 1,
+            "correct": 1,
+            "lastResult": true
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of adjusting the air-fuel mixture in a car's engine to optimize performance and fuel efficiency?",
+          "answer": "Idle air fuel adjustment",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 1,
+        "correct": 1
+      },
+      "timestamp": "2026-01-31T08:16:06+03:00"
+    },
+    {
+      "topic": "physics",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the difference between kinetic energy and potential energy?",
+          "answer": "Kinetic energy is energy of motion, potential energy is stored energy",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:18:48+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of machine learning?",
+          "answer": "To enable a system to learn from data without being explicitly programmed.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is a neural network?",
+          "answer": "A complex system of interconnected nodes (neurons) that process and transmit information.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is deep learning?",
+          "answer": "A subset of machine learning that uses neural networks with multiple layers to analyze and interpret complex data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:27:05+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the Machine Learning process?",
+          "answer": "To find the best hypothesis to make accurate predictions or classifications",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised learning involves labeled data, while unsupervised learning involves unlabeled data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for an AI system that can learn and improve on its own?",
+          "answer": "Autonomous learning or Self-modifying code",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:27:06+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for an agent that perceives its environment and takes actions to achieve a goal?",
+          "answer": "Autonomous Agent",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "In the context of AI, what is the process of training a model on one task to improve its performance on another related task?",
+          "answer": "Transfer Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the type of machine learning where the model is trained on both positive and negative examples of a class?",
+          "answer": "Supervised Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:27:07+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of unsupervised learning?",
+          "answer": "Identifying patterns or structures in data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between generative and discriminative models?",
+          "answer": "A generative model learns to generate data, while a discriminative model learns to classify or make predictions",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of locality-sensitive hashing?",
+          "answer": "A method to map high-dimensional data to a lower-dimensional space to enable efficient matching and similarity search",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:27:07+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for AI systems that can learn and improve on their own from experience?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Who is associated with the development of the first AI program, Logical Theorist, in 1956?",
+          "answer": "Allen Newell",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the definition of Artificial General Intelligence (AGI) in the context of AI?",
+          "answer": "AGI refers to AI that matches human intelligence across a wide range of tasks",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:27:59+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Neural Architecture Search (NAS)?",
+          "answer": "To automatically discover and optimize neural network architectures for specific tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for an AI model's ability to perform a task that would typically require human intelligence, such as understanding natural language or recognizing images?",
+          "answer": "Artificial General Intelligence (AGI)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What type of deep learning model is particularly well-suited for natural language processing tasks, such as text classification and language translation?",
+          "answer": "Recurrent Neural Network (RNN)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:28:02+03:00"
+    },
+    {
+      "topic": "physics grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main difference between a scientific hypothesis and a scientific law in physics?",
+          "answer": "A scientific law is a universal statement based on evidence, whereas a hypothesis is a testable statement that may lead to a new law.",
+          "stats": {
+            "attempts": 1,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the definition of potential difference (voltage) in a circuit?",
+          "answer": "The potential difference is the work done per unit charge in moving a charge from one point to another.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "According to Newton's third law of motion, what happens when two objects interact?",
+          "answer": "For every action, there is an equal and opposite reaction.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the relationship between kinetic energy (KE) and momentum (p) for an object moving at a constant velocity?",
+          "answer": "Momentum is the product of an object's mass and velocity, while kinetic energy is the product of its mass, velocity squared, and one-half gravity (on Earth).",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 5,
+          "question": "What type of waves involve matter being transferred and propagate through a medium?",
+          "answer": "Mechanical waves (e.g., sound, water waves, seismic waves)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 1,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:28:50+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is Narrow AI?",
+          "answer": "AI with a limited scope, such as image recognition or language translation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the Vanishing Gradient Problem in deep learning?",
+          "answer": "A problem that occurs when gradients during backpropagation become smaller, causing convergence issues.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the main goal of Ensemble Methods in AI?",
+          "answer": "To improve model performance by combining the predictions of multiple models.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:49:17+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the key characteristic of Narrow or Weak AI?",
+          "answer": "It focuses on a specific task and is designed to perform a particular function.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a function or module that an AI system performs independently?",
+          "answer": "Subroutine",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the process by which an AI system is exposed to large amounts of data to learn from patterns?",
+          "answer": "Deep Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:49:18+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of deep Q-learning in AI?",
+          "answer": "To learn a policy that maximizes cumulative rewards",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between a narrow AI and a general AI?",
+          "answer": "Narrow AI solves a specific task, while general AI can perform any intellectual task",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the process of using a single neural network to generate multiple unlockables cooperating together?",
+          "answer": "Ensemble learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:49:18+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary objective of the Mini-batch Gradient Descent algorithm in machine learning?",
+          "answer": "Minimize the loss function on a subset of training data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between a feedforward network and a recurrent neural network?",
+          "answer": "Feedforward networks are designed for static input data, while recurrent networks process sequential data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the primary advantage of using Word2Vec in natural language processing?",
+          "answer": "Reduces dimensionality of high-dimensional word embeddings to lower-dimensional vectors",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:49:18+03:00"
+    },
+    {
+      "topic": "science grade 3",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process called when plants make their own food from sunlight?",
+          "answer": "photosynthesis",
+          "stats": {
+            "attempts": 1,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 1,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T08:50:07+03:00"
+    },
+    {
+      "topic": "cars",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary energy source for most modern cars?",
+          "answer": "Internal Combustion Engine",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the process of a car's engine losing power and stalling?",
+          "answer": "Lagging",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Which car component's failure can cause a car to overheat?",
+          "answer": "Radiator",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:05:10+03:00"
+    },
+    {
+      "topic": "cars",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of an engine in a car?",
+          "answer": "To convert chemical energy from fuel into mechanical energy",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a car's ability to move without any external input of energy?",
+          "answer": "Frictional force, but more specifically, rolling resistance",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the purpose of a catalytic converter in a car's exhaust system?",
+          "answer": "To reduce pollutants and hazardous emissions by converting them into less toxic substances",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the term for a car's steering system that uses power assistance to make steering easier and more precise?",
+          "answer": "Power Steering",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 5,
+          "question": "What is the primary function of a car's air filter?",
+          "answer": "To remove dirt, dust, and other contaminants from the air before it enters the engine",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:05:30+03:00"
+    },
+    {
+      "topic": "car",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a car's exhaust system?",
+          "answer": "To release waste gases from the engine",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:10:13+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the principle behind how I generate flashcards?",
+          "answer": "Active Recall",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What type of study method is AI-based system like me utilizing?",
+          "answer": "Spaced Repetition",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the primary goal of my operation as a study agent?",
+          "answer": "Test Understanding",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:11:28+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the xorเกม (XOR Gate) neural network architecture?",
+          "answer": "To teach the neural network to memorize data using the XOR function.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the situation where a neural network is overfitted to the training data?",
+          "answer": "Overfitting.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of creating a mapping between input data and a particular output or response of the model?",
+          "answer": "Function approximation.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:11:32+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of machine learning?",
+          "answer": "Predicting the likelihood of an outcome",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between supervised and unsupervised learning?",
+          "answer": "Supervised learning has labeled data, unsupervised learning does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is deep learning?",
+          "answer": "A subset of machine learning that uses neural networks with multiple layers",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:13:40+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To learn a mapping between inputs and outputs based on labeled training data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a neural network with multiple hidden layers?",
+          "answer": "Deep neural network.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between weak and strong AI?",
+          "answer": "Weak AI is designed to perform a specific task, while strong AI possesses general intelligence and can perform any intellectual task.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:13:41+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of Active Recall in AI-related learning?",
+          "answer": "To strengthen memory and understanding of concepts through retrieving information from memory",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the narrow or broad range of tasks an AI system can perform?",
+          "answer": "Narrow or General Intelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the AI concept of using multiple models to make predictions or decisions?",
+          "answer": "Ensemble Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:16:30+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of active learning in AI?",
+          "answer": "To improve model performance through human feedback and interaction",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between weak and strong AI?",
+          "answer": "Weak AI is narrow and specific, while strong AI is general and human-like",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the concept of '_data bias' in AI development?",
+          "answer": "The presence of errors or prejudice in the training dataset that can be replicated in the model's output",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:20:31+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of a reinforcement learning algorithm?",
+          "answer": "To maximize a reward signal",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between supervised and unsupervised machine learning?",
+          "answer": "Supervised learning involves labeled data, while unsupervised learning does not",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a neural network that is trained to predict a probability distribution over a set of output classes?",
+          "answer": "A classifier",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:20:31+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of reinforcement learning in AI?",
+          "answer": "To learn optimal actions to maximize rewards in a given environment.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is gradient descent used for in machine learning?",
+          "answer": "To find the optimal weights of a model's parameters during training, typically used in supervised learning.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between weak and strong AI?",
+          "answer": "Weak AI refers to narrow or specialized AI designed to perform a specific task, whereas strong AI is a hypothetical AI that possesses general intelligence and can understand and learn like humans.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:20:32+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of a reinforcement learning algorithm?",
+          "answer": "To maximize a reward signal",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow AI and general AI?",
+          "answer": "Narrow AI is designed to perform a specific task, while general AI can perform any intellectual task",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is a neural network's ability to learn from unlabeled data called?",
+          "answer": "Self-supervised learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:20:32+03:00"
+    },
+    {
+      "topic": "computer grade 9",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary function of a Microprocessor?",
+          "answer": "Executes instructions",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which two components connect a computer system to the physical world?",
+          "answer": "Input/Output Devices",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Malware is typically spread through?",
+          "answer": "Vulnerabilities and User Actions",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:26:27+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process called when plants make their own food from sunlight?",
+          "answer": "Photosynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "A type of rock that is formed from the cooling and solidification of magma is called what?",
+          "answer": "Igneous",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Which of the following planets in our solar system is known as the Red Planet?",
+          "answer": "Mars",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:27:48+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main difference between physical and chemical changes in materials?",
+          "answer": "Physical changes are reversible, while chemical changes result in a change of composition.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+          "answer": "Igneous rock.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the movement of tectonic plates that results in the forming of mountains?",
+          "answer": "Orogenesis.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:37:48+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary advantage of the perceptron model in artificial neural networks?",
+          "answer": "Linear separability",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the phenomenon where artificial intelligence systems become more proficient at solving a task but perform worse at related tasks or new situations?",
+          "answer": "Catastrophic forgetting",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the primary difference between a feedforward neural network and a recurrent neural network?",
+          "answer": "Feedback connections",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:37:48+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of the backpropagation algorithm in neural networks?",
+          "answer": "To minimize the error between predicted and actual output",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the difference between narrow and broad artificial intelligence?",
+          "answer": "Narrow AI focuses on a specific task, while broad AI aims to match human-level intelligence in various tasks",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the hypothetical AI system that surpasses human intelligence, often resulting in unforeseen and potentially negative consequences?",
+          "answer": "Singularity",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:37:50+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for a subfield of artificial intelligence that deals with training machines to behave like humans and make decisions based on experience?",
+          "answer": "Machine Learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the AI concept that enables a machine to understand and respond to natural language inputs, such as speech or text?",
+          "answer": "Natural Language Processing (NLP)",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for a type of AI that can reason, solve problems, and make decisions using knowledge and logic?",
+          "answer": "Artificial General Intelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:39:31+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process by which plants make their own food?",
+          "answer": "Photosynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which of the following types of rocks is formed from the cooling and solidification of magma or lava?",
+          "answer": "Igneous",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the movement of tectonic plates that results in the formation of mountains?",
+          "answer": "Orogenesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:39:33+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of supervised learning in AI?",
+          "answer": "To enable AI models to make accurate predictions based on annotated data",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a neural network with multiple hidden layers?",
+          "answer": "Deep neural network",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the name of the popular AI framework developed by Francois Chollet?",
+          "answer": "TensorFlow's competitor Keras",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:39:53+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process by which plants make their own food from sunlight?",
+          "answer": "Photosynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which part of the cell is responsible for moving materials in and out of the cell?",
+          "answer": "Cell membrane",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the 'building blocks of life', which are made up of cells?",
+          "answer": "Tissues",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:39:55+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process by which water moves through a plant, from the roots to the leaves and out into the air?",
+          "answer": "Transpiration",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+          "answer": "Igneous rock",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the movement of tectonic plates that results in the collision of two plates, often leading to the formation of mountains?",
+          "answer": "Orogenesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:01+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of unsupervised learning in AI?",
+          "answer": "Identifying patterns and structure in data.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for a neural network's ability to improve its performance over time?",
+          "answer": "Adaptation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is a key difference between narrow and artificial general intelligence?",
+          "answer": "Narrow AI has a single task or function, while AGI has human-like ability to reason and apply knowledge across a wide range of tasks.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:03+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the primary goal of AI?",
+          "answer": "Automating tasks and solving complex problems through machine learning and cognition.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is a key difference between Narrow or Weak AI and Strong AI?",
+          "answer": "Narrow AI focuses on a specific task, whereas Strong AI aims to replicate human intelligence and consciousness.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for training a machine learning model on a dataset that is not only representative but also diverse in its distribution?",
+          "answer": "Data augmentation",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:05+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "How does the process of diffusion occur in a solution?",
+          "answer": "Random movement of particles from an area of higher concentration to an area of lower concentration.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the primary function of the mitochondria in a cell?",
+          "answer": "Generating energy for the cell through cellular respiration.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the main difference between an alloy and a compound?",
+          "answer": "An alloy is a mixture of elements, while a compound is formed by the chemical bonding of elements.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:05+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process by which water moves through a plant, from the roots to the leaves, and is then released into the air as water vapor?",
+          "answer": "Transpiration",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+          "answer": "Igneous",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the movement of tectonic plates that results in the creation of mountains and volcanoes?",
+          "answer": "Constructional Forces",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:05+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for the process of an AI system learning from its own experiences and adapting to new information without being explicitly programmed to do so?",
+          "answer": "Self-supervised learning",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the key difference between Narrow or Weak AI and Strong or General AI?",
+          "answer": "Narrow AI is designed to perform a specific task, while Strong AI has the ability to understand, learn, and apply its intelligence broadly like a human",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the hypothetical AI system that surpasses human intelligence in all domains and is capable of self-improvement?",
+          "answer": "Superintelligence",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:05+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the main difference between associative and dissociative memory types?",
+          "answer": "Associative memory involves recalling remembered information, whereas dissociative memory involves recalling information that was not previously experienced or learned.",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the process by which the nervous system regulates the amount of chloride ions within a neuron?",
+          "answer": "Chloride shift",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for an organized assembly of biological molecules, such as lipids and proteins, that maintains cell integrity and shape?",
+          "answer": "Plasma membrane",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:21+03:00"
+    },
+    {
+      "topic": "AI Concepts",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the term for a problem that is neither provably solvable nor provably unsolvable?",
+          "answer": "Undecidable Problem",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the primary advantage of using a feedforward neural network over a recurrent neural network?",
+          "answer": "Efficient parallel processing",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the term for the process of training a model using a combination of different training sets?",
+          "answer": "Arsenal Ensembling",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:23+03:00"
+    },
+    {
+      "topic": "comp grade 7",
+      "level": "Undergraduate",
+      "cards": [
+        {
+          "id": 1,
+          "question": "What is the process by which plants convert light energy into chemical energy?",
+          "answer": "Photosynthesis",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 2,
+          "question": "What is the term for the 'building blocks of life'?",
+          "answer": "Cells",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        },
+        {
+          "id": 3,
+          "question": "Which part of a cell is responsible for generating energy for the cell?",
+          "answer": "Mitochondria",
+          "stats": {
+            "attempts": 0,
+            "correct": 0,
+            "lastResult": false
+          }
+        }
+      ],
+      "stats": {
+        "attempts": 0,
+        "correct": 0
+      },
+      "timestamp": "2026-01-31T09:40:27+03:00"
     }
   ]
 }
