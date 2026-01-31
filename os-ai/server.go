@@ -45,7 +45,7 @@ RULES (must follow exactly):
     - "examples": an array of short real-world examples (if any)
     - "difficulty": one of Beginner, Intermediate, Advanced
     - "categories": an array of relevant categories
-    - "source": a short source or reference
+    - "source": a link to the resource on the internet
     - "lastReviewed": a string for last reviewed date
 - Use ONLY general knowledge
 - No punctuation inside the question text
@@ -66,7 +66,7 @@ EXAMPLE OUTPUT:
         ],
         "difficulty": "Intermediate",
         "categories": ["Geography", "Astronomy", "Physics"],
-        "source": "National Oceanic and Atmospheric Administration",
+        "source": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
         "lastReviewed": "2026-01-30"
       }
     }
@@ -125,3 +125,6 @@ if r.Method == http.MethodOptions {
     log.Println("Server running on :8080")
     log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
+
+

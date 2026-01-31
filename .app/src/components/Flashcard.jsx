@@ -29,11 +29,11 @@ const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
     const score = similarity(userAnswer, card.answer);
 
     if (score === 1) setFeedback('✅ Correct!');
-    else if (score >= 0.5) setFeedback(`⚠️ Almost! Correct answer: "${card.answer}"`);
-    else setFeedback(`❌ Incorrect. Correct answer: "${card.answer}"`);
+    else if (score >= 0.5) setFeedback(`⚠️ Almost!`);
+    else setFeedback(`❌ Incorrect`);
 
     setShowValidation(true);
-    onAnswerSubmit(card.id, userAnswer); // keep history in parent
+    onAnswerSubmit(card.id, userAnswer, score === 1);
     setUserAnswer('');
   };
 
@@ -43,7 +43,7 @@ const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
       <div 
         className={`relative w-full h-64 md:h-96 cursor-pointer transition-all duration-500 ${isFlipped ? 'bg-gradient-to-br from-purple-900 to-purple-700' : 'bg-gradient-to-br from-purple-800 to-purple-600'} rounded-2xl shadow-2xl p-4 md:p-8`}
         onClick={handleFlip}
-      >
+      > 
         {/* Front Side */}
         <div className={`h-full flex flex-col justify-between ${isFlipped ? 'hidden' : 'block'}`}>
           <div className="flex justify-between items-start">
@@ -53,7 +53,7 @@ const Flashcard = ({ card, onShowDetails, onAnswerSubmit }) => {
             <button
   onClick={(e) => {
     e.stopPropagation();
-    onShowDetails(card); // this already sets selectedCard and opens modal
+    onShowDetails(card);
   }}
   className="p-1 md:p-2 hover:bg-purple-500/30 rounded-full transition-colors"
 >

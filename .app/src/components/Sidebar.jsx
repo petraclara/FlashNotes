@@ -1,13 +1,17 @@
 import React from 'react';
 
+
+
 const Sidebar = ({ 
   history, 
   currentCard, 
   topics,
   newTopic,
   setNewTopic,
+  memoryTopics,
   onAddTopic,
   onRemoveTopic,
+  onReviewClick,
   onClose 
 }) => {
   const getIcon = (action) => {
@@ -39,6 +43,10 @@ const Sidebar = ({
     }
   };
 
+const handleTopicClick = (topic) => {
+  setNewTopic(topic); // populate the input field
+};
+
   const getStatusColor = (correct) => {
     if (correct === true) return 'text-green-400';
     if (correct === false) return 'text-red-400';
@@ -61,6 +69,9 @@ const Sidebar = ({
     );
     return null;
   };
+
+ 
+
 
   return (
     <div className="w-full h-full bg-gradient-to-b from-purple-900/95 to-purple-800/95 backdrop-blur-xl border-r border-purple-700/30 overflow-y-auto">
@@ -118,37 +129,36 @@ const Sidebar = ({
           </div>
 
           {/* Topics List */}
-          <div className="space-y-2">
-            {topics.map((topic, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg border border-purple-600/30 hover:border-purple-500/50 transition-colors group"
-              >
-                 <div 
-        className="flex items-center gap-3 cursor-pointer"
-        onClick={() => setNewTopic(topic)} // <-- populate input on click
-      >
-                  <div className="p-1.5 bg-gradient-to-br from-purple-500/30 to-purple-600/30 rounded-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                      <path d="M2 17l10 5 10-5" />
-                      <path d="M2 12l10 5 10-5" />
-                    </svg>
-                  </div>
-                  <span className="text-white font-medium">{topic}</span>
-                </div>
-                <button
-                  onClick={() => onRemoveTopic(topic)}
-                  className="p-1 opacity-0 group-hover:opacity-100 hover:bg-purple-600/30 rounded transition-all"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                </button>
-              </div>
-            ))}
-          </div>
+        {memoryTopics.map((topic, index) => (
+  <div
+    key={index}
+    className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg border border-purple-600/30 hover:border-purple-500/50 transition-colors group"
+  >
+    <div 
+      className="flex items-center gap-3 cursor-pointer"
+      onClick={() => handleTopicClick(topic)}
+    >
+      <div className="p-1.5 bg-gradient-to-br from-purple-500/30 to-purple-600/30 rounded-md">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z" />
+          <path d="M2 17l10 5 10-5" />
+          <path d="M2 12l10 5 10-5" />
+        </svg>
+      </div>
+      <span className="text-white font-medium">{topic}</span>
+    </div>
+    <button
+      onClick={(e) => {e.stopPropagation(); onRemoveTopic(topic)}}
+      className="p-1 opacity-0 group-hover:opacity-100 hover:bg-purple-600/30 rounded transition-all"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+))}
+
         </div>
 
         {/* Current Card */}
@@ -184,6 +194,7 @@ const Sidebar = ({
             <div
               key={item.id}
               className="p-4 hover:bg-purple-700/20 rounded-xl transition-colors cursor-pointer group"
+               onClick={() => onReviewClick(item)}
             >
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-purple-600/30 rounded-lg group-hover:bg-purple-500/40 transition-colors">

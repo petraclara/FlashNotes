@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Flashcard from './components/Flashcard';
 import Sidebar from './components/Sidebar';
 import DetailsModal from './components/DetailsModal';
@@ -7,20 +7,32 @@ import questionData from '../scripts/questions.json'
 import {historyStack} from './utils/mockData'
 import FlashcardsList from './components/FlashcardsList';
 
+
 function App() {
   const [activeTopic, setActiveTopic] = useState(null);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [history, setHistory] = useState(historyStack);
+  const [history, setHistory] = useState([]);
   const [showSidebar, setShowSidebar] = useState(false);
   const [topics, setTopics] = useState(["AI Concepts", "Machine Learning", "Neural Networks", "Reinforcement Learning"]);
   const [newTopic, setNewTopic] = useState("");
+  const [memoryTopics, setMemoryTopics] = useState([]);
 
  const [cards, setCards] = useState(questionData.questions);
 
 const currentCard = cards[currentCardIndex];
+
+
+  useEffect(() => {
+    const storedMemory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+    const savedTopics = Object.keys(storedMemory);
+    if (savedTopics.length > 0) {
+      setMemoryTopics(savedTopics);
+      setTopics(savedTopics); // initialize topics from storage
+    }
+  }, []);
 
   const handleNextCard = () => {
     setIsLoading(true);
@@ -43,55 +55,86 @@ const currentCard = cards[currentCardIndex];
     setShowDetailsModal(true);
   };
 
-  const handleAnswerSubmit = (cardId, answer) => {
-    const newHistoryItem = {
-      id: history.length + 1,
-      action: 'Reviewed',
-      cardId,
-      timestamp: new Date().toLocaleString(),
-      correct: Math.random() > 0.5 // Mock validation
-    };
-    setHistory([newHistoryItem, ...history]);
+ const normalize = (str) =>
+  str.toLowerCase().trim().replace(/\s+/g, ' ');
+ 
+ const handleAnswerSubmit = (cardId, answer, correct) => {
+  const newHistoryItem = {
+    id: crypto.randomUUID(),
+    action: 'Reviewed',
+    cardId,
+    topic: activeTopic,
+    timestamp: new Date().toLocaleTimeString(),
+    correct
   };
+  console.log('Answer correctness:', correct);
 
-  const handleAddTopic = async () => {
+  setHistory(prev => [newHistoryItem, ...prev]);
+};
+
+
+ const handleReviewClick = (review) => {
+  const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+
+  if (review.topic && memory[review.topic]) {
+    setCards(memory[review.topic]);
+    setActiveTopic(review.topic);
+    setNewTopic(review.topic);
+
+    const index = memory[review.topic].findIndex(
+      card => card.id === review.cardId
+    );
+
+    if (index !== -1) {
+      setCurrentCardIndex(index);
+    }
+  }
+
+  setShowSidebar(false);
+};
+
+
+
+const handleAddTopic = async () => {
   if (!newTopic.trim()) return;
 
   setIsLoading(true);
-  setActiveTopic(newTopic)
+  setActiveTopic(newTopic);
 
   try {
     const res = await fetch('http://localhost:8080/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        input: `Generate flashcard questions about ${newTopic}`
-      })
+      body: JSON.stringify({ input: `Generate flashcard questions about ${newTopic}` })
     });
 
     const data = await res.json();
-
     const parsed = JSON.parse(data.output);
 
-  const newCards = parsed.questions.map((q, idx) => ({
-  id: cards.length + idx,
-  question: q.question,
-  answer: q.answer || 'No answer provided',
-  details: {
-    examples: q.details?.examples || [],
-    difficulty: q.details?.difficulty || 'Intermediate',
-    categories: q.details?.categories || [],
-    source: q.details?.source || 'Unknown',
-    lastReviewed: q.details?.lastReviewed || new Date().toLocaleDateString(),
-  }
-}));
+    const newCards = parsed.questions.map((q, idx) => ({
+      id: cards.length + idx + 1,
+      question: q.question,
+      answer: q.answer || 'No answer provided',
+      details: {
+        examples: q.details?.examples || [],
+        difficulty: q.details?.difficulty || 'Intermediate',
+        categories: q.details?.categories || [],
+        source: q.details?.source || 'Unknown',
+        lastReviewed: q.details?.lastReviewed || new Date().toLocaleDateString(),
+      }
+    }));
 
+    const storedMemory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+    storedMemory[newTopic] = newCards;
+    localStorage.setItem('flashcardMemory', JSON.stringify(storedMemory));
 
-    setCards(newCards);          // RESET deck
+    setCards(newCards);
+    setCurrentCardIndex(0);
     setActiveTopic(newTopic);
-    setCurrentCardIndex(0);      // RESET position
-    setTopics(prev => [...prev, newTopic.trim()]);
     setNewTopic('');
+    
+    setTopics(prev => [...new Set([...prev, newTopic])]);
+    setMemoryTopics(prev => [...new Set([...prev, newTopic])]);
 
   } catch (err) {
     console.error('AI generation failed', err);
@@ -100,9 +143,23 @@ const currentCard = cards[currentCardIndex];
   }
 };
 
+
   const handleRemoveTopic = (topicToRemove) => {
     setTopics(topics.filter(topic => topic !== topicToRemove));
   };
+
+const handleTopicClick = (topic) => {
+  const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+  if (memory[topic]) {
+    setCards(memory[topic]);
+    setCurrentCardIndex(0);
+    setActiveTopic(topic);
+    setNewTopic(topic);
+  } else {
+    alert("No saved cards for this topic. Try generating first!");
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-950 via-purple-900 to-purple-800 text-white">
@@ -167,12 +224,16 @@ const currentCard = cards[currentCardIndex];
               topics={topics}
               newTopic={newTopic}
               setNewTopic={setNewTopic}
+              onReviewClick={handleReviewClick}
               onAddTopic={handleAddTopic}
+              memoryTopics = {memoryTopics}
               onRemoveTopic={handleRemoveTopic}
-              onClose={() => setShowSidebar(false)}
+                handleTopicClick={handleTopicClick}
+  onClose={() => setShowSidebar(false)}
             />
           </div>
         </div>
+
 
         {/* Main Content */}
         <main className="flex-1 p-4 md:p-8">
@@ -185,7 +246,7 @@ const currentCard = cards[currentCardIndex];
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm text-purple-300">Currently studying</p>
-                    <p className="font-semibold">AI Concepts & Machine Learning</p>
+                    <p className="font-semibold">{topics[topics.length-1]}</p>
                   </div>
                   <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
                 </div>
@@ -262,7 +323,7 @@ const currentCard = cards[currentCardIndex];
 
 
       {/* Mobile floating button to open sidebar */}
-      {!showSidebar && (
+      {!showSidebar && (    
         <button
           onClick={() => setShowSidebar(true)}
           className="fixed bottom-6 right-6 md:hidden z-30 p-4 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-110"
