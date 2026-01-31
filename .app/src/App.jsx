@@ -1,19 +1,35 @@
+<<<<<<< HEAD:frontend/src/App.jsx
 import React, { useState, useEffect } from 'react';
+=======
+import React, { useState,useEffect } from 'react';
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
 import Flashcard from './components/Flashcard';
 import Sidebar from './components/Sidebar';
 import DetailsModal from './components/DetailsModal';
 import Loader from './components/Loader';
+<<<<<<< HEAD:frontend/src/App.jsx
 import { generateFlashcards, fetchHistory } from "./api/flashNotesApi";
+=======
+import questionData from '../scripts/questions.json'
+import {historyStack} from './utils/mockData'
+import FlashcardsList from './components/FlashcardsList';
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
 
 
 function App() {
+  const [activeTopic, setActiveTopic] = useState(null);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+<<<<<<< HEAD:frontend/src/App.jsx
+=======
+  const [history, setHistory] = useState([]);
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
   const [showSidebar, setShowSidebar] = useState(false);
   const [topics, setTopics] = useState([]);
   const [newTopic, setNewTopic] = useState("");
+<<<<<<< HEAD:frontend/src/App.jsx
   const [level, setLevel] = useState("Undergraduate");
   const [cards, setCards] = useState([]);
   const [history, setHistory] = useState([]);
@@ -112,6 +128,23 @@ useEffect(() => {
 
   loadCards();
 }, []);
+=======
+  const [memoryTopics, setMemoryTopics] = useState([]);
+
+ const [cards, setCards] = useState(questionData.questions);
+
+const currentCard = cards[currentCardIndex];
+
+
+  useEffect(() => {
+    const storedMemory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+    const savedTopics = Object.keys(storedMemory);
+    if (savedTopics.length > 0) {
+      setMemoryTopics(savedTopics);
+      setTopics(savedTopics); // initialize topics from storage
+    }
+  }, []);
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
 
   const handleNextCard = () => {
     setIsLoading(true);
@@ -134,6 +167,7 @@ useEffect(() => {
     setShowDetailsModal(true);
   };
 
+<<<<<<< HEAD:frontend/src/App.jsx
   const recordResult = (topic, cardId, isCorrect) => {
   setTopicStats(prev => {
     const t = prev[topic] || { attempts: 0, correct: 0, cards: {} };
@@ -168,8 +202,23 @@ useEffect(() => {
     question: currentCard.question,
     answer: currentCard.answer,
     topic: activeTopic,
+=======
+ const normalize = (str) =>
+  str.toLowerCase().trim().replace(/\s+/g, ' ');
+ 
+ const handleAnswerSubmit = (cardId, answer, correct) => {
+  const newHistoryItem = {
+    id: crypto.randomUUID(),
+    action: 'Reviewed',
+    cardId,
+    topic: activeTopic,
+    timestamp: new Date().toLocaleTimeString(),
+    correct
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
   };
+  console.log('Answer correctness:', correct);
 
+<<<<<<< HEAD:frontend/src/App.jsx
   setHistory((prev) => [entry, ...prev]);
 
   if (isCorrect !== null) {
@@ -202,6 +251,77 @@ useEffect(() => {
     setCurrentCardIndex(0);
     setTopics(prev => [...prev, newTopic]);
     setNewTopic("");
+=======
+  setHistory(prev => [newHistoryItem, ...prev]);
+};
+
+
+ const handleReviewClick = (review) => {
+  const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+
+  if (review.topic && memory[review.topic]) {
+    setCards(memory[review.topic]);
+    setActiveTopic(review.topic);
+    setNewTopic(review.topic);
+
+    const index = memory[review.topic].findIndex(
+      card => card.id === review.cardId
+    );
+
+    if (index !== -1) {
+      setCurrentCardIndex(index);
+    }
+  }
+
+  setShowSidebar(false);
+};
+
+
+
+const handleAddTopic = async () => {
+  if (!newTopic.trim()) return;
+
+  setIsLoading(true);
+  setActiveTopic(newTopic);
+
+  try {
+    const res = await fetch('http://localhost:8080/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ input: `Generate flashcard questions about ${newTopic}` })
+    });
+
+    const data = await res.json();
+    const parsed = JSON.parse(data.output);
+
+    const newCards = parsed.questions.map((q, idx) => ({
+      id: cards.length + idx + 1,
+      question: q.question,
+      answer: q.answer || 'No answer provided',
+      details: {
+        examples: q.details?.examples || [],
+        difficulty: q.details?.difficulty || 'Intermediate',
+        categories: q.details?.categories || [],
+        source: q.details?.source || 'Unknown',
+        lastReviewed: q.details?.lastReviewed || new Date().toLocaleDateString(),
+      }
+    }));
+
+    const storedMemory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+    storedMemory[newTopic] = newCards;
+    localStorage.setItem('flashcardMemory', JSON.stringify(storedMemory));
+
+    setCards(newCards);
+    setCurrentCardIndex(0);
+    setActiveTopic(newTopic);
+    setNewTopic('');
+    
+    setTopics(prev => [...new Set([...prev, newTopic])]);
+    setMemoryTopics(prev => [...new Set([...prev, newTopic])]);
+
+  } catch (err) {
+    console.error('AI generation failed', err);
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
   } finally {
     setIsLoading(false);
   }
@@ -211,6 +331,19 @@ useEffect(() => {
   const handleRemoveTopic = (topicToRemove) => {
     setTopics(topics.filter(topic => topic !== topicToRemove));
   };
+
+const handleTopicClick = (topic) => {
+  const memory = JSON.parse(localStorage.getItem('flashcardMemory') || '{}');
+  if (memory[topic]) {
+    setCards(memory[topic]);
+    setCurrentCardIndex(0);
+    setActiveTopic(topic);
+    setNewTopic(topic);
+  } else {
+    alert("No saved cards for this topic. Try generating first!");
+  }
+};
+
 
   return (
     
@@ -236,16 +369,20 @@ useEffect(() => {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-200 to-purple-100 bg-clip-text text-transparent">
+<<<<<<< HEAD:frontend/src/App.jsx
                     Learning Flashcards
+=======
+                    PurpleHeyz
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
                   </h1>
-                  <p className="text-sm text-purple-300">Powered by AI Agent • Interactive Learning Platform</p>
+                  <p className="text-sm text-purple-300">Powered by openrouter • Interactive Learning Platform</p>
                 </div>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-4">
               <div className="text-right">
                 <p className="text-sm text-purple-300">Currently studying</p>
-                <p className="font-semibold">AI Concepts & Machine Learning</p>
+                <p className="font-semibold">{topics[topics.length - 1]}</p>
               </div>
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
             </div>
@@ -270,6 +407,7 @@ useEffect(() => {
             md:relative md:translate-x-0 md:transition-none
             ${showSidebar ? 'translate-x-0' : '-translate-x-full'}
           `}>
+<<<<<<< HEAD:frontend/src/App.jsx
             <Sidebar
   history={history}
   currentCard={currentCard}
@@ -283,8 +421,24 @@ useEffect(() => {
   onClose={() => setSidebarOpen(false)}
 />
 
+=======
+            <Sidebar 
+              history={history} 
+              currentCard={currentCard}
+              topics={topics}
+              newTopic={newTopic}
+              setNewTopic={setNewTopic}
+              onReviewClick={handleReviewClick}
+              onAddTopic={handleAddTopic}
+              memoryTopics = {memoryTopics}
+              onRemoveTopic={handleRemoveTopic}
+                handleTopicClick={handleTopicClick}
+  onClose={() => setShowSidebar(false)}
+            />
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
           </div>
         </div>
+
 
         {/* Main Content */}
         <main className="flex-1 p-4 md:p-8">
@@ -296,7 +450,12 @@ useEffect(() => {
               <div className="md:hidden mb-6 p-4 bg-gradient-to-r from-purple-800/30 to-purple-900/20 rounded-2xl border border-purple-700/30">
                 <div className="flex items-center justify-between">
                   <div>
+<<<<<<< HEAD:frontend/src/App.jsx
                     <p className="text-sm text-purple-300">Studying</p>
+=======
+                    <p className="text-sm text-purple-300">Currently studying</p>
+                    <p className="font-semibold">{topics[topics.length-1]}</p>
+>>>>>>> 7baf56c466c288b5945623e487fc9c97e85fe6dd:.app/src/App.jsx
                   </div>
                   <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full"></div>
                 </div>
@@ -318,6 +477,7 @@ useEffect(() => {
 
               {/* Flashcard */}
               <Flashcard 
+                key={`${activeTopic}-${currentCard}`}
                 card={currentCard}
                 onShowDetails={handleShowDetails}
                 onAnswerSubmit={handleAnswerSubmit}
@@ -370,8 +530,9 @@ useEffect(() => {
         onClose={() => setShowDetailsModal(false)}
       />
 
+
       {/* Mobile floating button to open sidebar */}
-      {!showSidebar && (
+      {!showSidebar && (    
         <button
           onClick={() => setShowSidebar(true)}
           className="fixed bottom-6 right-6 md:hidden z-30 p-4 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-110"
