@@ -124,7 +124,10 @@ const Sidebar = ({
                 key={index}
                 className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-700/20 to-purple-800/10 rounded-lg border border-purple-600/30 hover:border-purple-500/50 transition-colors group"
               >
-                <div className="flex items-center gap-3">
+                 <div 
+        className="flex items-center gap-3 cursor-pointer"
+        onClick={() => setNewTopic(topic)} // <-- populate input on click
+      >
                   <div className="p-1.5 bg-gradient-to-br from-purple-500/30 to-purple-600/30 rounded-md">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 2L2 7l10 5 10-5-10-5z" />
